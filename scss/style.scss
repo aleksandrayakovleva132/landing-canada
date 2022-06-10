@@ -1,13 +1,26 @@
 @import "colors.scss";
+@import "button.scss";
+@import "header.scss";
+@import "1.scss";
+@import "2.scss";
+@import "3.scss";
+@import "4.scss";
+@import "footer.scss";
 
 body {
   background-color: $layer-0;
   font-size: 15px;
   color: $text-default;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .header-1 {
-  color: $text-default;
   font-weight: 700;
   letter-spacing: 0.2px;
   font-size: 34px;
@@ -15,7 +28,6 @@ body {
 }
 
 .header-2 {
-  color: $text-default;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
@@ -23,7 +35,6 @@ body {
 }
 
 .text-reg-15 {
-  color: $text-primary;
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
@@ -31,15 +42,20 @@ body {
 }
 
 .text-bold-15 {
-  color: $text-primary;
   font-weight: 700;
   font-size: 15px;
   line-height: 23px;
   letter-spacing: 0.3px;
 }
 
+.text-bold-14 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
 .text-bold-13 {
-  color: $text-primary;
   font-weight: 700;
   font-size: 13px;
   line-height: 19.5px;
@@ -47,7 +63,6 @@ body {
 }
 
 .text-bold-12 {
-  color: $text-primary;
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
@@ -56,10 +71,6 @@ body {
 
 
 @media (min-width: 780px) {
-  body {
-    background-color: red;
-  }
-
   .header-1 {
     font-size: 50px;
     line-height: 75px;
@@ -68,6 +79,55 @@ body {
   .header-2 {
     font-size: 36px;
     line-height: 54px;
+  }
+
+  .text-reg-40 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+  }
+
+  .text-reg-18 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+  }
+
+  .text-bold-18 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+  }
+
+  .text-reg-16 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+  }
+
+  .text-bold-16 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+  }
+
+  .text-reg-14 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+  }
+
+  .text-bold-14 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
   }
 
 }
