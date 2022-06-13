@@ -1,4 +1,5 @@
 .first-block {
+  margin-bottom: 40px;
   &__container {
     padding: 16px 16px 32px 16px;
   }
@@ -43,5 +44,17 @@
      &--mark {
        color: $text-default;
      }
+  }
+
+  &__button {
+    margin-bottom: 16px;
+  }
+
+  &__aplications {
+    margin-bottom: 32px;
+  }
+  
+  &__banner {
+    overflow: hidden;
   }
 }
