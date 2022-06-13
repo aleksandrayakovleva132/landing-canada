@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px 40px;
+
+  &__title {
+    text-align: center;
+    margin: 0 0 24px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: $text-default;
+
+    & span {
+      color: transparent;
+      background-clip: text;
+      background-image: $default;
+    }
+  }
+
+  &__button {
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    text-align: center;
+    color: $highlight;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 56%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__applications {
+    margin-bottom: 40px;
+  }
+
+  &__logo {
+    margin-bottom: 24px;
+  }
+
+  &__item {
+     width: 48px;
+     height: 48px;
+     border-radius: 50%;
+     background-color: $button;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+}
