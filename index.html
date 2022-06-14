@@ -13,7 +13,7 @@
 <body>
 <!--  header-->
     <header class="header">
-        <img src="images/logotypes/leonru.svg" width="93px"/>
+        <img class="header__img" src="images/logotypes/leonru.svg"/>
     </header>
 
 <!--  first-block-->
@@ -28,48 +28,52 @@
             <h1 class="first-block__title">Приложение для
                 <span class="first-block__title--mark">Android</span>
             </h1>
-            <p class="first-block__text text-reg-15">
+            <p class="first-block__text">
                 Дарим <span class="first-block__text--mark">2 500 рублей фрибетами</span> за установку приложения.
-                Делайте ставки за наш счет, а выигрыш забирайте себе!
+                Делайте ставки за наш счет, а&nbsp;выигрыш забирайте себе!
             </p>
-            <button class="first-block__button button button--small">
+            <div class="first-block__footer">
+                <button class="first-block__button button">
                 <span class="button__image">
                     <img src="images/icons/download.svg" alt="download" width="100%">
                 </span>
-            </button>
+                </button>
 
-            <div class="applications first-block__applications">
-                <div class="applications__item applications__item--first">
-                    <div class="applications__galaxy">
-                        <img src="images/icons/galaxy.svg" width="13.72" />
-                    </div>
-                    <div class="applications__labels">
+                <div class="applications first-block__applications">
+                    <div class="applications__item applications__item--first">
+                        <div class="applications__galaxy">
+                            <img src="images/icons/galaxy.svg" width="13.72" />
+                        </div>
+                        <div class="applications__labels">
                         <span  class="applications__subtitle">
                             <img src="images/logotypes/available-on.svg" width="55.49">
                         </span>
-                        <span class="applications__label">
+                            <span class="applications__label">
                             <img src="images/logotypes/galaxy-store.svg" alt="" width="96.32">
                         </span>
+                        </div>
                     </div>
-                </div>
-                <div class="applications__item applications__item--second">
-                    <div class="applications__huawei">
-                        <img src="images/icons/appgalery.svg" width="25.33"/>
-                    </div>
-                    <div class="applications__labels">
+                    <div class="applications__item applications__item--second">
+                        <div class="applications__huawei">
+                            <img src="images/icons/appgalery.svg" width="25.33"/>
+                        </div>
+                        <div class="applications__labels">
                         <span class="applications__subtitle">
                              <img src="images/logotypes/explore-it-on.svg" width="60.92">
                         </span>
-                        <span class="applications__label">
+                            <span class="applications__label">
                             <img src="images/logotypes/app-gallery.svg" alt="" width="83">
                         </span>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="first-block__banner">
             <div class="first-block__banner-bg">
-                <img src="images/1/bg.svg" width="108%">
+                <img class="first-block__banner--mobile" src="images/1/bg.svg" width="108%">
+                <img class="first-block__banner--desktop" src="images/1/bg-desk.svg" >
             </div>
         </div>
     </div>

@@ -1,47 +1,49 @@
 .button {
   background: $default;
-  width: 175px;
-  height: 60px;
+  width: 119px;
+  height: 42px;
+
   border-radius: 48px;
   border: none;
   position: relative;
   &::after {
     content: 'Скачать';
     position: absolute;
-    top: 18px;
-    left: 62px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
     letter-spacing: 0.3px;
     color: $white;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    top: 10px;
+    left: 38px;
   }
 
-   &__image {
-     display: block;
-     position: absolute;
-     width: 22px;
-     height: 22px;
-     top: 19px;
-     left: 36px;
-   }
 
-  &--small {
-     width: 147px;
-     height: 42px;
+  &__image {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 12px;
+    left: 16px;
+  }
 
-     &::after {
-       font-size: 15px;
-       line-height: 22px;
-       top: 10px;
-       left: 46px;
-     }
+  @media (min-width: 1200px) {
+    width: 183px;
+    height: 60px;
 
-     & .button__image {
-         width: 18px;
-         height: 18px;
-         top: 12px;
-         left: 24px;
-     }
+    &::after {
+      top: 18px;
+      left: 66px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    & .button__image {
+      width: 22px;
+      height: 22px;
+      top: 19px;
+      left: 40px;
+    }
   }
 }
