@@ -76,11 +76,11 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    //border: 1px solid red;
+
+
 
     &__container {
-      //border: 1px solid yellow;
-      padding-left: 2%;
+      padding: 0 0 0 2%;
       width: 48%;
     }
 
@@ -100,6 +100,7 @@
   }
 
   @media (min-width: 1200px) {
+    margin-bottom: 60px;
     &__title {
       font-size: 50px;
       line-height: 72px;

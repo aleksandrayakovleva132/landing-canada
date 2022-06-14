@@ -75,4 +75,15 @@
     justify-content: center;
     margin-bottom: 40px;
   }
+
+  @media (min-width: 720px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    &__image {
+      margin: 0;
+    }
+  }
+
 }
