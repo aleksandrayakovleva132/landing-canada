@@ -21,11 +21,55 @@ body {
   box-sizing: border-box;
 }
 
-.flexible-container {
+.block-1 {
+  padding: 16px 0 40px 0;
+}
+
+.block-2 {
+  padding: 0 16px 40px;
+}
+
+.block-3 {
+  padding: 0 16px 40px 16px;
+}
+
+.block-4 {
+  padding: 0 9px 40px 16px;
+}
+
+.block-footer {
+  padding: 20px 16px 40px;
+}
+
+@media (min-width: 720px) {
+  .block-1 {
+    padding: 0 32px 0 0;
+  }
+
+  .block-2 {
+    padding: 60px 32px;
+  }
+
+  .block-3 {
+    padding: 50px 32px;
+  }
+
+  .block-4 {
+    padding: 64px 32px;
+  }
+
+  .block-footer {
+    padding: 60px 32px;
+  }
+}
+
+.block-flexible {
   width: 100%;
 
   @media (min-width: 1400px) {
+    margin: 0 auto;
     max-width: 77%;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
