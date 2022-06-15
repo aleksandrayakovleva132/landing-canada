@@ -1,5 +1,5 @@
 .fourth-block {
-  padding: 0 9px 40px 16px;
+  border: 1px solid red;
   &__title {
     color: $white;
     font-weight: 700;
@@ -22,7 +22,7 @@
   }
 
   &__item {
-    padding: 24px;
+    padding: 24px 24px 36px 24px;
     background: linear-gradient(287.52deg, #0B0D0E 4.81%, #22262A 86.39%);
     border-radius: 12px;
     width: 100%;
@@ -67,6 +67,19 @@
       color: transparent;
       background-clip: text;
       background-image: $default;
+    }
+  }
+
+  @media (min-width: 960px) {
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin: 0 1% 0 0;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

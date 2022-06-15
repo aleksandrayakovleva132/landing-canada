@@ -1,5 +1,5 @@
 .third-block {
-  padding: 0 16px;
+  border: 1px solid blue;
   &__bonus {
     height: 28px;
     width: 83px;
@@ -73,7 +73,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
   }
 
   @media (min-width: 720px) {
@@ -81,9 +80,42 @@
     align-items: center;
     flex-direction: row-reverse;
 
+    &__content {
+      padding-left: 2%;
+      width: 50%;
+    }
+
     &__image {
       margin: 0;
+      width: 50%;
     }
   }
 
+  @media (min-width: 1200px) {
+     margin: 0 auto;
+
+     &__title {
+       font-size: 36px;
+       line-height: 54px;
+       margin-bottom: 32px;
+     }
+
+     &__text {
+        font-size: 18px;
+       line-height: 24px;
+     }
+
+      &__footer {
+        display: flex;
+        align-items: center;
+      }
+
+      &__button {
+        margin: 0 16px 0 0;
+      }
+
+      &__applications {
+        margin: 0;
+      }
+  }
 }

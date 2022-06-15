@@ -1,7 +1,7 @@
 .first-block {
-  margin-bottom: 40px;
+  border: 1px solid yellow;
   &__container {
-    padding: 16px 16px 32px 16px;
+    margin-bottom: 32px;
   }
   &__badge {
     width: 185px;
@@ -77,8 +77,6 @@
     align-items: center;
     flex-direction: row-reverse;
 
-
-
     &__container {
       padding: 0 0 0 2%;
       width: 48%;
@@ -100,7 +98,6 @@
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 60px;
     &__title {
       font-size: 50px;
       line-height: 72px;
