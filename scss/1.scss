@@ -68,8 +68,22 @@
     overflow: hidden;
     height: 325px;
     width: 100%;
+    position: relative;
     &--desktop {
       display: none;
+    }
+  }
+
+  &__banner-hero {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    transform: scaleX(90%);
+    transition: all .7s ease-in-out;
+
+    &.active {
+      transform: scale(110%);
+      transition: all .7s ease-in-out;
     }
   }
   @media (min-width: 720px) {
