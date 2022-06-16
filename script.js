@@ -1,15 +1,16 @@
-console.log('Скрипт подключен');
-
 const animItems = document.querySelectorAll('.anim-item');
 
 if(animItems.length > 0) {
   window.addEventListener('scroll', animOnScroll)
   function animOnScroll(params) {
       for( let index = 0; index < animItems.length; index++) {
-          const animItem = animItems[index];
+          const animItem = animItems[index] ;
           const animItemHeight = animItem.offsetHeight;
           const animaItemOffset = offset(animItem).top;
+
           const animStart = 1;
+          const animEarlyStart = -2;
+
 
           let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
@@ -20,7 +21,9 @@ if(animItems.length > 0) {
           if((pageYOffset > animaItemOffset - animItemPoint) && animaItemOffset < (animaItemOffset + animItemHeight)) {
               animItem.classList.add('active');
           } else {
-              animItem.classList.remove('active');
+              if (!animItem.classList.contains('.anim-no-hide')) {
+                  animItem.classList.remove('active');
+              }
           }
       }
   }

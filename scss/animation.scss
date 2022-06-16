@@ -1,0 +1,22 @@
+.anima-show {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.anima-show.active,
+.active .active-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.anim-resize {
+  transform: scale(80%, 80%);
+  transition: all 1.2s ease 0s;
+}
+
+.anim-resize.active,
+.active .anim-resize {
+  transform: scale(100%, 100%);
+  transition: all 0.8s ease 0s;
+}
