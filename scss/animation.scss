@@ -47,28 +47,69 @@
 .anim-resize-2.anim-active {
   transform: scale(110%, 110%);
   transition: all 0.7s ease 0s;
-
-}
-
-.anim-active.anim-scale-bounce {
-  animation: scaleBounce 2s ease-in-out;
 }
 
 
-@keyframes scaleBounce {
+
+// decoration lines
+
+.line-anim-1 {
+  top: 10px;
+  right: 38px;
+  transform: translate(30px,-22px);
+  animation-delay: 3s;
+  animation: 8s line-1 ease-in-out infinite alternate;
+}
+
+.line-anim-2 {
+  top: 20px;
+  right: 28%;
+  transform: translate(30px,-22px);
+  animation-delay: 3s;
+  animation: 8s line-1 ease-in-out infinite alternate;
+}
+
+.line-anim-3 {
+  top: 170px;
+  right: 50%;
+  transform: translate(30px,-22px);
+  animation-delay: 3s;
+  animation: 8s line-1 ease-in-out infinite alternate;
+}
+
+.o-anim {
+  top: 200px;
+  right: 5%;
+  transform: translate(30px,-22px);
+  animation-delay: 3s;
+  animation: 8s line-1 ease-in-out infinite alternate;
+}
+
+.x-anim {
+  top: 36px;
+  right: 20%;
+  transform: translate(30px,-22px);
+  animation-delay: 3s;
+  animation: 8s line-1 ease-in-out infinite alternate;
+}
+
+
+@keyframes line-1 {
    0% {
-     width: 90%;
-     height: 90%;
+     transform: translate(30px,-22px);
    }
-
-    50% {
-      width: 120%;
-      height: 120%;
-    }
 
    100% {
-     width: 90%;
-     height: 90%;
+     transform: translate(0);
    }
+}
 
+@keyframes line-2 {
+  0% {
+    transform: translate(30px,-22px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
