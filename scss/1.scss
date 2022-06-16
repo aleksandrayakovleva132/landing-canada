@@ -76,15 +76,7 @@
 
   &__banner-hero {
     position: absolute;
-    left: 5%;
     bottom: 0;
-    transform: scaleX(100%);
-    transition: all .7s ease-in-out;
-
-    &.active {
-      transform: scale(110%);
-      transition: all .7s ease-in-out;
-    }
   }
   @media (min-width: 720px) {
     display: flex;

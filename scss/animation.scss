@@ -1,22 +1,74 @@
+//show
 .anima-show {
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 
-.anima-show.active,
-.active .active-show {
+.anima-show.anim-active,
+.anim-active .active-show {
   opacity: 1;
-  transform: translate(0px, 0px);
+  transform: translate(0px, 0%);
 }
 
+
+.anima-show-early {
+  transform: translate(0px, -35%);
+  opacity: 0;
+  transition: all 0.7s ease 0s;
+}
+
+.anima-show-early.anim-active,
+.anim-active .active-show-early {
+  opacity: 1;
+  transform: translate(0px, 0%);
+}
+
+
+// resize
 .anim-resize {
-  transform: scale(80%, 80%);
+  transform: scale(90%, 90%);
   transition: all 1.2s ease 0s;
 }
 
-.anim-resize.active,
-.active .anim-resize {
+.anim-resize.anim-active,
+.anim-active .anim-resize {
   transform: scale(100%, 100%);
-  transition: all 0.8s ease 0s;
+  transition: all 0.7s ease 0s;
+
+}
+
+// resize
+.anim-resize-2 {
+  transform: scale(100%, 100%);
+  transition: all 1.2s ease 0s;
+}
+
+.anim-resize-2.anim-active {
+  transform: scale(110%, 110%);
+  transition: all 0.7s ease 0s;
+
+}
+
+.anim-active.anim-scale-bounce {
+  animation: scaleBounce 2s ease-in-out;
+}
+
+
+@keyframes scaleBounce {
+   0% {
+     width: 90%;
+     height: 90%;
+   }
+
+    50% {
+      width: 120%;
+      height: 120%;
+    }
+
+   100% {
+     width: 90%;
+     height: 90%;
+   }
+
 }

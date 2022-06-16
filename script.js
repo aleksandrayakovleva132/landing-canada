@@ -19,10 +19,10 @@ if(animItems.length > 0) {
           }
 
           if((pageYOffset > animaItemOffset - animItemPoint) && animaItemOffset < (animaItemOffset + animItemHeight)) {
-              animItem.classList.add('active');
+              animItem.classList.add('anim-active');
           } else {
-              if (!animItem.classList.contains('.anim-no-hide')) {
-                  animItem.classList.remove('active');
+              if (!animItem.classList.contains('anim-no-hide')) {
+                  animItem.classList.remove('anim-active');
               }
           }
       }
