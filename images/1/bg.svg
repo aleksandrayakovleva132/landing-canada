@@ -1,8 +1,8 @@
 <svg width="375" height="325" viewBox="0 0 375 325" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_1439_10447" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="325">
+<mask id="mask0_1680_13768" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="375" height="325">
 <rect width="375" height="325" fill="#C4C4C4"/>
 </mask>
-<g mask="url(#mask0_1439_10447)">
+<g mask="url(#mask0_1680_13768)">
 <ellipse opacity="0.4" cx="187.5" cy="214.5" rx="229.5" ry="182.5" fill="#32383E"/>
 </g>
 </svg>

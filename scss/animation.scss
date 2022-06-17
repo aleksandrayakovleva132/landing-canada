@@ -5,6 +5,23 @@
   transition: all 0.7s ease 0s;
 }
 
+@media (min-width: 720px) {
+  .anima-show {
+    transform: translate(-120%, 0);
+
+    &.anima-show-1 {
+      transition: all 0.6s ease-in 0s;
+    }
+    &.anima-show-2 {
+      transition: all 0.5s ease-in 0s;
+    }
+    &.anima-show-3 {
+      transition: all 0.4s ease-in 0s;
+    }
+  }
+
+}
+
 .anima-show.anim-active,
 .anim-active .active-show {
   opacity: 1;
@@ -16,6 +33,23 @@
   transform: translate(0px, -35%);
   opacity: 0;
   transition: all 0.4s ease 0s;
+}
+
+@media (min-width: 720px) {
+  .anima-show-early {
+    transform: translate(-120%, 0);
+
+    &.anima-show-early-1 {
+      transition: all 0.6s ease-in 0s;
+    }
+    &.anima-show-early-2 {
+      transition: all 0.5s ease-in 0s;
+    }
+    &.anima-show-early-3 {
+      transition: all 0.4s ease-in 0s;
+    }
+  }
+
 }
 
 .anima-show-early.anim-active,
