@@ -15,7 +15,7 @@
 .anima-show-early {
   transform: translate(0px, -35%);
   opacity: 0;
-  transition: all 0.7s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .anima-show-early.anim-active,
@@ -40,12 +40,12 @@
 
 // resize
 .anim-resize-2 {
-  transform: scale(100%, 100%);
+  transform: scale(80%, 80%);
   transition: all 1.2s ease 0s;
 }
 
 .anim-resize-2.anim-active {
-  transform: scale(110%, 110%);
+  transform: scale(100%, 100%);
   transition: all 0.7s ease 0s;
 }
 
@@ -53,45 +53,6 @@
 
 // decoration lines
 
-.line-anim-1 {
-  top: 10px;
-  right: 38px;
-  transform: translate(30px,-22px);
-  animation-delay: 3s;
-  animation: 8s line-1 ease-in-out infinite alternate;
-}
-
-.line-anim-2 {
-  top: 20px;
-  right: 28%;
-  transform: translate(30px,-22px);
-  animation-delay: 3s;
-  animation: 8s line-1 ease-in-out infinite alternate;
-}
-
-.line-anim-3 {
-  top: 170px;
-  right: 50%;
-  transform: translate(30px,-22px);
-  animation-delay: 3s;
-  animation: 8s line-1 ease-in-out infinite alternate;
-}
-
-.o-anim {
-  top: 200px;
-  right: 5%;
-  transform: translate(30px,-22px);
-  animation-delay: 3s;
-  animation: 8s line-1 ease-in-out infinite alternate;
-}
-
-.x-anim {
-  top: 36px;
-  right: 20%;
-  transform: translate(30px,-22px);
-  animation-delay: 3s;
-  animation: 8s line-1 ease-in-out infinite alternate;
-}
 
 .anim-decor {
   top: 0;

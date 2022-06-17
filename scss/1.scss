@@ -1,4 +1,5 @@
 .first-block {
+  position: relative;
   &__container {
     padding: 0 16px;
     margin-bottom: 32px;
@@ -75,15 +76,11 @@
     }
   }
 
-  //&__banner-bg {
-  //  border: 1px solid yellow;
-  //}
-
   &__banner-hero {
     position: absolute;
     z-index: 3;
-    bottom: 40px;
-    left: calc(50% - 172px);
+    bottom: -6px;
+    width: 100%;
   }
 
   &__decoration-image,
@@ -98,6 +95,16 @@
 
   &__decor-item {
     position: absolute;
+  }
+
+  &__decoration--desktop {
+    border: 1px solid yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
   }
 
   @media (min-width: 720px) {
@@ -122,6 +129,15 @@
         display: block;
         width: 100%;
       }
+    }
+    &__decoration--mobile {
+      display: none;
+    }
+    &__decoration--block {
+      display: none;
+    }
+    &__banner-hero--mobile {
+      display: none;
     }
   }
 
