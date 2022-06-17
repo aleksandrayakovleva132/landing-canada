@@ -93,6 +93,14 @@
   animation: 8s line-1 ease-in-out infinite alternate;
 }
 
+.anim-decor {
+  top: 0;
+  right: 0;
+  transform: translate(30px,-22px);
+  animation-delay: 3s;
+  animation: 8s line-1 ease-in-out infinite alternate;
+}
+
 
 @keyframes line-1 {
    0% {
