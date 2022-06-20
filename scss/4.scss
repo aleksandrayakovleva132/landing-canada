@@ -1,11 +1,11 @@
 .fourth-block {
   &__title {
-    color: $white;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.2px;
     margin: 0 0 24px 0;
+    color: $text-default;
 
     & span {
       color: transparent;
@@ -30,15 +30,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-
-    &-title {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: 0.3px;
-      margin: 0 0 10px 0;
-      color: $text-default;
     }
 
     &-text {
@@ -67,6 +58,13 @@
       color: transparent;
       background-clip: text;
       background-image: $default;
+    }
+  }
+
+  @media (min-width: 720px)  {
+    &__title {
+      font-size: 36px;
+      line-height: 54px;
     }
   }
 

@@ -69,8 +69,6 @@
   &__banner {
     overflow: hidden;
     width: 100%;
-    position: relative;
-    border: 1px solid orange;
     padding-top: 50px;
     display: flex;
     justify-content: center;
@@ -82,27 +80,14 @@
     background-size: 100% auto;
     z-index: 1;
     &-hero {
-      border: 1px solid purple;
       width: 90%;
       max-width: 380px;
       z-index: 3;
     }
     &--desktop {
       display: none;
+      background-image: url('../images/1/bg.svg');
     }
-  }
-
-  &__banner-hero {
-    //position: absolute;
-    //z-index: 3;
-    //&--mobile {
-    //  bottom: -6px;
-    //  left: 5%;
-    //}
-    //&--desktop {
-    //  top: 10%;
-    //  left: 5%;
-    //}
   }
 
   &__decoration-image,
@@ -127,10 +112,15 @@
     bottom: 0;
     display: none;
     overflow: hidden;
-    z-index: 2;
   }
   &__banner-hero--desktop {
     display: none;
+  }
+
+  @media (max-width: 720px){
+    &__banner {
+      position: relative;
+    }
   }
 
   @media (min-width: 720px) {
@@ -144,7 +134,6 @@
     }
 
     &__banner {
-      //height: 100%;
       width: 52%;
       padding-bottom: 74px;
       justify-content: start;
@@ -153,10 +142,7 @@
       &--mobile {
         display: none;
       }
-      &--desktop {
-        display: block;
-        width: 100%;
-      }
+
       &-hero {
         max-width: 40vw;
       }
@@ -172,8 +158,6 @@
     }
     &__decoration--desktop {
       display: block;
-      //width: 430px;
-      //border: 1px solid;
     }
     &__banner-hero--desktop {
       display: block;
@@ -182,7 +166,6 @@
 
   @media (min-width: 720px) and (max-width: 1400px) {
     &__banner-bg {
-      border: 1px solid yellow;
       margin-left: -16%;
     }
   }
