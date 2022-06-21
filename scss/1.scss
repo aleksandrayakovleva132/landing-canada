@@ -1,5 +1,6 @@
 .first-block {
   position: relative;
+  overflow: hidden;
   &__container {
     padding: 0 16px;
     margin-bottom: 32px;
@@ -67,7 +68,6 @@
   }
 
   &__banner {
-    overflow: hidden;
     width: 100%;
     padding-top: 50px;
     display: flex;
@@ -115,6 +115,15 @@
   }
   &__banner-hero--desktop {
     display: none;
+  }
+
+  &__decoration-items {
+    border: 1px solid yellow;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   @media (max-width: 720px){
@@ -198,3 +207,5 @@
     }
   }
 }
+
+

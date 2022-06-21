@@ -34,4 +34,36 @@ if(animItems.length > 0) {
 
       return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
   }
+
+
 }
+
+const animateBanner = document.querySelector('.animate-banner');
+const animateHero = document.querySelector('.animate-hero');
+const animateDecorations = document.querySelectorAll('.animate-decoration');
+const animateFastDecorations = document.querySelectorAll('.animate-fast-decoration');
+
+ function animateHeroBanner() {
+     if(animateBanner) {
+         animateHero.classList.add('animate-hero--active');
+     }
+ }
+
+if(animateBanner) {
+function animateDecorationBanner() {
+     for( let index = 0; index < animateDecorations.length; index++) {
+         const animItem = animateDecorations[index];
+         animItem.classList.add('active');
+     }
+}
+function animateEarlyDecorationBanner() {
+    for( let index = 0; index < animateFastDecorations.length; index++) {
+        const animItem = animateFastDecorations[index];
+        animItem.classList.add('active');
+    }
+}
+}
+setTimeout(animateEarlyDecorationBanner, 500);
+setTimeout(animateDecorationBanner, 500);
+setTimeout(animateHeroBanner, 1000);
+

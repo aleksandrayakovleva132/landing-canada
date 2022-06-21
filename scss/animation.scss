@@ -2,7 +2,6 @@
 .anima-show {
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 0.7s ease 0s;
 }
 
 @media (min-width: 720px) {
@@ -82,8 +81,87 @@
   transform: scale(100%, 100%);
   transition: all 0.7s ease 0s;
 }
+.animate-cross-1 {
+  left: -15%;
+  top: -10%;
 
+  &.active {
+    left: 4%;
+    top: 10%;
+    opacity: 1;
+  }
+}
 
+.animate-cross-2 {
+  right: -15%;
+  bottom: -10%;
+
+  &.active {
+    right: 12%;
+    bottom: 4%;
+    opacity: 1;
+  }
+}
+
+.animate-line-1 {
+  left: 20%;
+  top: -10%;
+
+  &.active {
+    left: 8%;
+    top: 6%;
+  }
+}
+
+.animate-line-2 {
+  right: 0%;
+  top: -15%;
+
+  &.active {
+    right: 10%;
+    top: 3%;
+  }
+}
+
+.animate-line-3 {
+  left: 35%;
+  bottom: -20%;
+
+  &.active {
+    left: 45%;
+    bottom: -8%;
+  }
+}
+
+.animate-line-4 {
+  bottom: 0%;
+  left: 10%;
+
+  &.active {
+    bottom: 20%;
+    left: 25%;
+  }
+}
+
+.animate-circle-1 {
+  bottom: 14%;
+  left: -15%;
+
+  &.active {
+    left: 6%;
+    bottom: 6%;
+  }
+}
+
+.animate-circle-2 {
+  right: -0.5%;
+  bottom: 18%;
+
+  &.active {
+    right: 2%;
+    bottom: 18%;
+  }
+}
 
 // decoration lines
 
@@ -91,9 +169,35 @@
 .anim-decor {
   top: 0;
   right: 0;
-  transform: translate(30px,-22px);
-  animation-delay: 3s;
-  animation: 8s line-1 ease-in-out infinite alternate;
+}
+
+.animate-hero {
+  opacity: 1;
+  transition: all 0.1s ease-in-out 0s;
+  transform: translate3d(0, 0, 0);
+}
+
+//.animate-hero--active {
+//  opacity: 1;
+//  transition: all 0.1s ease-in-out 0s;
+//  transform: translate3d(10px, 10px, 10px);
+//}
+
+.animate-fast-decoration,
+.animate-decoration {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.animate-fast-decoration.active,
+.animate-decoration.active {
+  opacity: 1;
+  transition: all 0.7s ease-in-out 0s;
+}
+
+.animate-cross-1 {
+
 }
 
 
@@ -116,3 +220,4 @@
     transform: translate(0);
   }
 }
+
