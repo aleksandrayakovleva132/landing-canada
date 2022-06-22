@@ -41,7 +41,7 @@ if(animItems.length > 0) {
 const animateBanner = document.querySelector('.animate-banner');
 const animateHero = document.querySelector('.animate-hero');
 const animateDecorations = document.querySelectorAll('.animate-decoration');
-const animateFastDecorations = document.querySelectorAll('.animate-fast-decoration');
+const animateLateDecorations = document.querySelectorAll('.animate-late-decoration');
 
  function animateHeroBanner() {
      if(animateBanner) {
@@ -56,14 +56,14 @@ function animateDecorationBanner() {
          animItem.classList.add('active');
      }
 }
-function animateEarlyDecorationBanner() {
-    for( let index = 0; index < animateFastDecorations.length; index++) {
-        const animItem = animateFastDecorations[index];
+function animateLateDecorationBanner() {
+    for( let index = 0; index < animateLateDecorations.length; index++) {
+        const animItem = animateLateDecorations[index];
         animItem.classList.add('active');
     }
 }
 }
-setTimeout(animateEarlyDecorationBanner, 500);
-setTimeout(animateDecorationBanner, 500);
-setTimeout(animateHeroBanner, 1000);
+setTimeout(animateLateDecorationBanner, 500);
+setTimeout(animateDecorationBanner, 300);
+setTimeout(animateHeroBanner, 700);
 

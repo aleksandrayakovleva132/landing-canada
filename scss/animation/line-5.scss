@@ -1,0 +1,9 @@
+.animate-line-5 {
+  top: 138px;
+  left: -153px;
+  &.active {
+    top: -6px;
+    left: -20px;
+    z-index: 3;
+  }
+}

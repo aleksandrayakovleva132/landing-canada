@@ -1,3 +1,16 @@
+@import "line-1.scss";
+@import "line-2.scss";
+@import "line-3.scss";
+@import "line-4.scss";
+@import "line-5.scss";
+@import "line-6.scss";
+@import "line-7.scss";
+@import "line-8.scss";
+@import "line-9.scss";
+@import "line-10.scss";
+@import "line-11.scss";
+@import "line-12.scss";
+@import "line-13.scss";
 //show
 .anima-show {
   transform: translate(0px, 120%);
@@ -103,35 +116,6 @@
   }
 }
 
-.animate-line-1 {
-  left: 20%;
-  top: -10%;
-
-  &.active {
-    left: 8%;
-    top: 6%;
-  }
-}
-
-.animate-line-2 {
-  right: 0%;
-  top: -15%;
-
-  &.active {
-    right: 10%;
-    top: 3%;
-  }
-}
-
-.animate-line-3 {
-  left: 35%;
-  bottom: -20%;
-
-  &.active {
-    left: 45%;
-    bottom: -8%;
-  }
-}
 
 .animate-line-4 {
   bottom: 0%;
@@ -166,13 +150,17 @@
 // decoration lines
 
 
-.anim-decor {
-  //top: 0;
-  //right: 0;
-  transform: translate(0);
-  animation-delay: 3s;
-  animation: 8s line-1 ease-in-out infinite alternate;
-}
+
+ //   анимация движения
+//.anim-left-right {
+//  transform: translate(0);
+//  animation-delay: 3s;
+//  animation: 6s line-1 ease-in-out infinite alternate;
+//
+//  @media (min-width: 720px) {
+//    animation: 3s line-1 ease-in-out infinite alternate;
+//  }
+//}
 
 .animate-hero {
   opacity: 0;

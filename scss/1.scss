@@ -106,12 +106,12 @@
 
   &__decoration--desktop {
     position: absolute;
-    top: -88px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    overflow: hidden;
+    //top: -88px;
+    //left: 0;
+    //right: 0;
+    //bottom: 0;
+    //display: none;
+    //overflow: hidden;
   }
   &__banner-hero--desktop {
     display: none;
@@ -123,6 +123,10 @@
     bottom: 0;
     left: 0;
     right: 0;
+  }
+
+  &__decor-top {
+    display: none;
   }
 
   @media (max-width: 720px){
@@ -169,6 +173,13 @@
     }
     &__banner-hero--desktop {
       display: block;
+    }
+    &__decor-top {
+      display: block;
+      position: absolute;
+      //top: 0;
+      //left: 0;
+      //z-index: 4;
     }
   }
 
