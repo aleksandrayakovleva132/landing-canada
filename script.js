@@ -63,7 +63,7 @@ function animateLateDecorationBanner() {
     }
 }
 }
-setTimeout(animateLateDecorationBanner, 500);
-setTimeout(animateDecorationBanner, 300);
+setTimeout(animateLateDecorationBanner, 10);
+setTimeout(animateDecorationBanner, 100);
 setTimeout(animateHeroBanner, 700);
 

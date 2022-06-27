@@ -1,0 +1,10 @@
+.animate-line-7 {
+  top: 44px;
+  left: 666px;
+  position: absolute;
+  z-index: 3;
+  &.active {
+    top: 108px;
+    left: 600px;
+  }
+}

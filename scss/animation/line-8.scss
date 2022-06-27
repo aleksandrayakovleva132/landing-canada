@@ -1,0 +1,46 @@
+.animate-line-8 {
+  position: absolute;
+  top: 207px;
+  left: 280px;
+  width: 198px;
+  height: 163px;
+
+  &.active {
+    top: 370px;
+    left: 140px;
+  }
+}
+
+.animate-line-8-1 {
+  animation-delay: 0.1s;
+  animation: line-8-1 1.5s forwards ease-out;
+  display: flex;
+}
+
+.animate-line-8-2 {
+  animation-delay: 0.1s;
+  animation: line-8-2 1.5s forwards ease-out;
+  display: flex;
+}
+
+@keyframes line-8-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    right: 166px;
+    top: 156px;
+  }
+}
+
+@keyframes line-8-2 {
+  0% {
+    top: -143px;
+    right: -176px;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}

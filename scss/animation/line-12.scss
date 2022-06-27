@@ -1,0 +1,10 @@
+.animate-line-12 {
+  position: absolute;
+  top: 682px;
+  right: 292px;
+
+  &.active {
+    top: 509px;
+    right: 106px;
+  }
+}
