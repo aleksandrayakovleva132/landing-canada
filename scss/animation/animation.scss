@@ -12,11 +12,9 @@
 @import "line-12.scss";
 @import "line-13.scss";
 @import "line-14.scss";
-//show
-.anima-show {
-  transform: translate(0px, 120%);
-  opacity: 0;
-}
+@import "circle-3-4.scss";
+@import "crosses.scss";
+
 
 @media (max-width: 720px) {
   .animate-line-5,
@@ -26,8 +24,24 @@
   .animate-line-9,
   .animate-line-10,
   .animate-line-11,
-  .animate-line-12{
+  .animate-line-12,
+  .animate-circle-3,
+  .animate-circle-4,
+  .animate-cross {
     display: none;
+  }
+}
+
+//show
+.anima-show {
+  transform: translate(0px, 120%);
+  transition: all 0.7s ease-in 0s;
+  opacity: 0;
+
+  &.anim-active {
+    transform: translate(0px, 0%);
+    transition: all 0.7s ease-in 0s;
+    opacity: 1;
   }
 }
 
@@ -45,9 +59,17 @@
       transition: all 0.4s ease-in 0s;
     }
   }
-
-
+  .animate-crosses {
+    display: block;
+    position: absolute;
+    border: 1px solid yellowgreen;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
+
 
 .anima-show.anim-active,
 .anim-active .active-show {
@@ -166,15 +188,15 @@
 
 
  //   анимация движения
-//.anim-left-right {
-//  transform: translate(0);
-//  animation-delay: 3s;
-//  animation: 6s line-1 ease-in-out infinite alternate;
-//
-//  @media (min-width: 720px) {
-//    animation: 3s line-1 ease-in-out infinite alternate;
-//  }
-//}
+.anim-left-right {
+  transform: translate(0);
+  animation-delay: 3s;
+  animation: 6s line-1 ease-in-out infinite alternate;
+
+  @media (min-width: 720px) {
+    animation: 3s line-1 ease-in-out infinite alternate;
+  }
+}
 
 .animate-hero {
   opacity: 0;

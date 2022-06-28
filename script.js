@@ -39,14 +39,15 @@ if(animItems.length > 0) {
 }
 
 const animateBanner = document.querySelector('.animate-banner');
-const animateHero = document.querySelector('.animate-hero');
+const animateHeroes = document.querySelectorAll('.animate-hero');
 const animateDecorations = document.querySelectorAll('.animate-decoration');
 const animateLateDecorations = document.querySelectorAll('.animate-late-decoration');
 
  function animateHeroBanner() {
-     if(animateBanner) {
-         animateHero.classList.add('animate-hero--active');
-     }
+         for( let index = 0; index < animateHeroes.length; index++) {
+             const animateHero = animateHeroes[index];
+             animateHero.classList.add('animate-hero--active');
+         }
  }
 
 if(animateBanner) {

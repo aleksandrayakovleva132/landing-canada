@@ -1,0 +1,68 @@
+.animate-cross {
+    display: flex;
+    position: absolute;
+    opacity: 1;
+    &.active {
+        opacity: 1;
+    }
+    &-3 {
+        width: 68px;
+        height: 68px;
+        left: 39px;
+        top: 42px;
+        &.active {
+            left: 56px;
+            top: 58px;
+            width: 34px;
+            height: 34px;
+        }
+    }
+    &-4 {
+        width: 60px;
+        height: 60px;
+        right: 270px;
+        top: 9px;
+        &.active {
+            right: 285px;
+            top: 22px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &-5 {
+        width: 24px;
+        height: 24px;
+        right: 204px;
+        top: 220px;
+        &.active {
+            width: 12px;
+            height: 12px;
+            right: 216px;
+            top: 232px;
+        }
+    }
+    &-6 {
+        width: 60px;
+        height: 60px;
+        left: 438px;
+        bottom: 32px;
+        &.active {
+            left: 468px;
+            bottom: 62px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &-7 {
+        width: 24px;
+        height: 24px;
+        left: 320px;
+        bottom: 160px;
+        &.active {
+            left: 308px;
+            bottom: 148px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
