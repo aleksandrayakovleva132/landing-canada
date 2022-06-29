@@ -2,6 +2,8 @@
   position: absolute;
   left: 30px;
   bottom: 130px;
+  width: 68px;
+  height: 68px;
 
   &.active {
     bottom: 130px;
@@ -13,6 +15,8 @@
   position: absolute;
   left: -20px;
   bottom: 350px;
+  width: 56px;
+  height: 56px;
 
   &.active {
     bottom: 350px;
@@ -20,4 +24,29 @@
   }
 }
 
-@media (min-width: 720px) and (max-width: 1199px) { }
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-circle-3 {
+    left: 20px;
+    bottom: 80px;
+    background-color: yellow;
+    width: 45.3px;
+    height: 45.3px;
+
+    &.active {
+      bottom: 233.3px;
+      left: 50Px;
+    }
+  }
+
+  .animate-circle-4  {
+    left: -13.3px;
+    bottom: 233.3px;
+    width: 37.3px;
+    height: 37.3px;
+
+    &.active {
+      bottom: 233.3px;
+      left: 40vw;
+    }
+  }
+}
