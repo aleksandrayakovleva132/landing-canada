@@ -3,6 +3,7 @@
   height: 173px;
   top: -138px;
   right: 3px;
+  border: 1px solid olive;
   &.active {
     top: 6px;
     right: 260px;
@@ -59,5 +60,47 @@
   100% {
     top: 0;
     right: 0;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-line-10 {
+    width: 135.3px;
+    height: 115.3px;
+    border: 1px solid brown;
+
+    &.active {
+      right: 15vw;
+    }
+  }
+
+  .animate-line-10-1 {
+    width: 20.52px;
+  }
+
+  .animate-line-10-2 {
+    width: 112.48px;
+  }
+
+  @keyframes line-10-1 {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    100% {
+      top: 110.6px;
+      right: 116px;
+    }
+  }
+
+  @keyframes line-10-2 {
+    0% {
+      top: -70px;
+      right: -99.3px;
+    }
+    100% {
+      top: 0;
+      right: 0;
+    }
   }
 }

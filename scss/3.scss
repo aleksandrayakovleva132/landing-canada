@@ -70,13 +70,9 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 50%;
-    height: 37vw;
+    width: 100%;
+    max-width: 340px;
 
-
-    &-container {
-      width: 50%;
-    }
 
     &.anim-active {
       width: 100%;
@@ -95,14 +91,19 @@
     flex-direction: row-reverse;
 
     &__content {
-      padding-left: 2%;
+      padding-left: 4%;
       width: 50%;
 
     }
 
     &__image {
-      width: 25%;
+      width: 50%;
+      max-width: 100%;
+      height: 37vw;
 
+      &-container {
+        width: 50%;
+      }
       &.anim-active {
         //width: 50%;
         transition: all 0.5s ease-in 0s;

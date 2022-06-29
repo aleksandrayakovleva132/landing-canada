@@ -1,10 +1,28 @@
 .animate-line-7 {
-  top: 44px;
-  left: 666px;
+  top: 0;
+  left: 610px;
   position: absolute;
   z-index: 3;
+  width: 75px;
+  height: 62px;
   &.active {
-    top: 108px;
-    left: 600px;
+    top: 44px;
+    left: 550px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-line-7 {
+    top: 0;
+    left: 406px;
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 41.3px;
+    border: 1px solid darkgreen;
+    &.active {
+      top: 30px;
+      left: 366px;
+    }
   }
 }
