@@ -2,9 +2,28 @@
   position: absolute;
   top: 682px;
   right: 292px;
+  width: 204px;
+  height: 174.8px;
+  border: 1px solid slateblue;
 
   &.active {
     top: 509px;
     right: 106px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1199px) {
+  .animate-line-12 {
+    position: absolute;
+    top: 454.6px;
+    right: 194.6px;
+    width: 136px;
+    height: 116.3px;
+    border: 1px solid chocolate;
+
+    &.active {
+      top: 339.3px;
+      right: 70.6px;
+    }
   }
 }
