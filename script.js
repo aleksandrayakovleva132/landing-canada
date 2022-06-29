@@ -65,6 +65,6 @@ function animateLateDecorationBanner() {
 }
 }
 setTimeout(animateLateDecorationBanner, 10);
-setTimeout(animateDecorationBanner, 100);
-setTimeout(animateHeroBanner, 700);
+setTimeout(animateDecorationBanner, 80);
+setTimeout(animateHeroBanner, 250);
 

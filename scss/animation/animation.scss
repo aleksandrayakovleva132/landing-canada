@@ -40,7 +40,7 @@
 
   &.anim-active {
     transform: translate(0px, 0%);
-    transition: all 0.7s ease-in 0s;
+    transition: all 0.4s ease-in 0s;
     opacity: 1;
   }
 }
@@ -62,7 +62,6 @@
   .animate-crosses {
     display: block;
     position: absolute;
-    border: 1px solid yellowgreen;
     top: 0;
     left: 0;
     right: 0;
