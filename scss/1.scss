@@ -1,11 +1,13 @@
 .first-block {
   position: relative;
   overflow: hidden;
+
   &__container {
     padding: 0 16px;
     margin-bottom: 32px;
     z-index: 4;
   }
+
   &__badge {
     width: 185px;
     height: 28px;
@@ -45,18 +47,18 @@
   }
 
   &__text {
-     margin: 0 0 32px 0;
-     color: $text-primary;
-     font-size: 15px;
-     line-height: 22px;
-     letter-spacing: 0.3px;
-     font-weight: 400;
-     max-width: 380px;
+    margin: 0 0 32px 0;
+    color: $text-primary;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    max-width: 380px;
 
-     &--mark {
-       color: $text-default;
-       font-weight: 700;
-     }
+    &--mark {
+      color: $text-default;
+      font-weight: 700;
+    }
   }
 
   &__button {
@@ -79,11 +81,13 @@
     background-position: bottom;
     background-size: 100% auto;
     z-index: 1;
+
     &-hero {
       width: 90%;
       max-width: 380px;
       z-index: 3;
     }
+
     &--desktop {
       display: none;
       background-image: url('../images/1/bg.svg');
@@ -107,6 +111,7 @@
   &__decoration--desktop {
     position: absolute;
   }
+
   &__banner-hero--desktop {
     display: none;
   }
@@ -123,7 +128,7 @@
     display: none;
   }
 
-  @media (max-width: 720px){
+  @media (max-width: 720px) {
     &__banner {
       position: relative;
     }
@@ -211,5 +216,3 @@
     }
   }
 }
-
-
