@@ -181,6 +181,9 @@
     &__banner-bg {
       margin-left: -16%;
     }
+    &__banner-hero {
+      max-width: 50vw;
+    }
   }
 
   @media (min-width: 1200px) {

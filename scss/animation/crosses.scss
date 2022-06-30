@@ -66,3 +66,67 @@
         }
     }
 }
+@media (min-width: 720px) and (max-width: 1400px) {
+    .animate-cross {
+        &-3 {
+            width: 45.3px;
+            height: 45.3px;
+            left: 26px;
+            top: 28px;
+            &.active {
+                left: 37.3px;
+                top: 50.6px;
+                width: 22.6px;
+                height: 22.6px;
+            }
+        }
+        &-4 {
+            width: 40px;
+            height: 40px;
+            right: 180px;
+            top: 6px;
+            &.active {
+                right: 190px;
+                top: 14.6px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &-5 {
+            width: 16px;
+            height: 16px;
+            right: 136px;
+            top: 146.6px;
+            &.active {
+                width: 8px;
+                height: 8px;
+                right: 144px;
+                top: 154.6px;
+            }
+        }
+        &-6 {
+            width: 20px;
+            height: 20px;
+            left: 292px;
+            bottom: 21.3px;
+            &.active {
+                left: 312px;
+                bottom: 41.3px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &-7 {
+            width: 16px;
+            height: 16px;
+            left: 213.3px;
+            bottom: 106.6px;
+            &.active {
+                left: 205.3px;
+                bottom: 98.6px;
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+}
