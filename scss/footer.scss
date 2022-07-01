@@ -91,9 +91,14 @@
 
     &__apps-block {
       display: flex;
+
       align-items: center;
       margin-bottom: 80px;
       flex-direction: row;
+    }
+
+    &__item {
+      cursor: pointer;
     }
   }
 }

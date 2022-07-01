@@ -31,6 +31,16 @@
   @media (min-width: 1200px) {
     width: 183px;
     height: 60px;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(110.7deg, #49EBF5 -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
+      box-shadow: 1px 1px 20px rgba(28, 212, 120, 0.6);
+    }
+
+    &:active {
+      background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
+    }
 
     &::after {
       top: 18px;
