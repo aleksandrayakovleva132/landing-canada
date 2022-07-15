@@ -68,6 +68,11 @@
     }
   }
 
+  &__bold {
+    font-weight: 700;
+    color: $text-default;
+  }
+
   @media (min-width: 720px)  {
     &__title {
       font-size: 36px;
