@@ -65,6 +65,9 @@
      display: flex;
      align-items: center;
      justify-content: center;
+    &:active {
+      filter: drop-shadow(1px 1px 20px rgba(28, 212, 120, 0.25));
+    }
   }
 
   @media (min-width: 1200px) {
@@ -99,6 +102,10 @@
 
     &__item {
       cursor: pointer;
+      &:hover,
+      &:active {
+        filter: drop-shadow(1px 1px 20px rgba(28, 212, 120, 0.25));
+      }
     }
   }
 }
