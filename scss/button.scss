@@ -6,6 +6,7 @@
   border-radius: 48px;
   border: none;
   position: relative;
+  display: block;
   &::after {
     content: 'Скачать';
     position: absolute;
