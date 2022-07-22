@@ -34,8 +34,6 @@ if(animItems.length > 0) {
 
       return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
   }
-
-
 }
 
 const animateBanner = document.querySelector('.animate-banner');
@@ -64,6 +62,16 @@ function animateLateDecorationBanner() {
     }
 }
 }
+
+function showYear() {
+    var date = new Date();
+
+    var year = date.getFullYear();
+
+    document.getElementById("currentYear").innerText = year;
+}
+showYear();
+
 setTimeout(animateLateDecorationBanner, 10);
 setTimeout(animateDecorationBanner, 80);
 setTimeout(animateHeroBanner, 250);
