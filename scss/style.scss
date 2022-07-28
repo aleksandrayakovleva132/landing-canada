@@ -5,6 +5,7 @@
 @import "2.scss";
 @import "3.scss";
 @import "4.scss";
+@import "5.scss";
 @import "footer.scss";
 @import "applications.scss";
 @import "animation/animation";
@@ -36,10 +37,6 @@ body {
 
 .block-4 {
   padding: 0 9px 70px 16px;
-}
-
-.block-footer {
-  padding: 20px 16px 70px;
 }
 
 @media (min-width: 720px) {

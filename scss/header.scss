@@ -1,16 +1,21 @@
 .header {
   width: 100%;
-  height: 48px;
+  height: 58px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 8px 0 16px;
 
   &__img {
     width: 72px;
   }
 
+  &__buttons {
+    display: flex;
+  }
+
   @media (min-width: 720px) {
-    height: 88px;
+    height: 92px;
 
     &__img {
       width: 124px;

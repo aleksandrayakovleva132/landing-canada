@@ -20,6 +20,13 @@
     height: 42px;
   }
 
+  &--transparent {
+    width: 94px;
+    height: 42px;
+    margin-right: 16px;
+    background: transparent;
+  }
+
   &:active {
     background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
   }
@@ -46,6 +53,10 @@
       height: 42px;
       font-size: 15px;
       line-height: 22px;
+    }
+
+    &--transparent {
+      margin-right: 24px;
     }
   }
 }
