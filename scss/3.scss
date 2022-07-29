@@ -52,4 +52,40 @@
     letter-spacing: 0.3px;
     margin: 0;
   }
+
+  @media (min-width: 1200px) {
+    padding: 76px 0 0 0;
+    &__title {
+      font-size: 48px;
+      line-height: 64px;
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__pre-text {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 88px 0;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    &__item {
+      width: 50%;
+      margin-bottom: 60px;
+    }
+
+    &__label {
+      max-width: 70%;
+    }
+  }
 }

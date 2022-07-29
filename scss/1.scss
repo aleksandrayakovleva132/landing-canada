@@ -17,10 +17,55 @@
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.3px;
-    margin-bottom: 32px;
+    margin: 0 0 32px 0;
     font-weight: 300;
   }
 
+  &__image.mobile {
+    display: block;
+  }
+  &__image.desktop {
+    display: none;
+  }
+
+  @media (min-width: 720px) {
+    display: flex;
+    padding: 0 32px;
+    &__row {
+      display: flex;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 51px;
+      line-height: 64px;
+      margin-bottom: 36px;
+    }
+
+    &__label {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 48px;
+    }
+
+    &__image.mobile {
+      display: none;
+    }
+    &__column {
+      width: 40%;
+    }
+    &__image.desktop {
+      display: block;
+      width: 60%;
+    }
+  }
+
   @media (min-width: 1200px) {
+    padding: 0;
+    &__title {
+      font-size: 60px;
+      line-height: 82px;
+      margin-bottom: 36px;
+    }
   }
 }

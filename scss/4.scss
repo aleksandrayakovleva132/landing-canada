@@ -49,6 +49,8 @@
     margin-right: 8px;
     padding-bottom: 3px;
     overflow: hidden;
+    position: relative;
+    cursor: pointer;
     &-footer {
       padding: 16px;
       height: 53px;
@@ -86,5 +88,65 @@
   &__image {
     overflow: hidden;
     height: 305px;
+  }
+
+  &__mask {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  &__button {
+    color: $white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(110.7deg, #49EBF5 -9.14%, #04DB19 136.77%);
+    border-radius: 48px;
+    width: 81px;
+    height: 42px;
+    position: absolute;
+    left: 65px;
+    top: 132px;
+    opacity: 0;
+  }
+
+  &__item:active .fourth-block__button,
+  &__item:active .fourth-block__mask {
+    opacity: 1;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 60px 0;
+    &__title {
+      font-size: 48px;
+      line-height: 64px;
+      margin: 0 0 24px 0;
+    }
+    &__label {
+      margin: 0 0 48px 0;
+      font-size: 16px;
+      color: #999999;
+    }
+    &__mask {
+      transition: 0.8s;
+    }
+    &__item:hover .fourth-block__button,
+    &__item:hover .fourth-block__mask {
+      opacity: 1;
+      transition: 0.8s;
+    }
+
+    &__shadow {
+      display: none;
+    }
   }
 }
