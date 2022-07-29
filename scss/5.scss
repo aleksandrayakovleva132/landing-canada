@@ -6,6 +6,10 @@
     position: absolute;
     bottom: -2px;
     right: 16px;
+
+    &.desktop {
+       display: none;
+    }
   }
 
   &__bg {
@@ -35,5 +39,24 @@
     line-height: 21px;
     letter-spacing: 0.3px;
     max-width: 70%;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 60px 0;
+    &__image.mobile {
+      display: none;
+    }
+     &__image.desktop {
+       display: block;
+       bottom: 0;
+       right: -32px;
+     }
+
+    &__bg {
+      height: 280px;
+      display: flex;
+      align-items: center;
+      padding: 0 0 0 32px;
+    }
   }
 }
