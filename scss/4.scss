@@ -88,6 +88,10 @@
   &__image {
     overflow: hidden;
     height: 305px;
+
+    & img {
+      width: 100%;
+    }
   }
 
   &__mask {
@@ -139,6 +143,26 @@
     &__mask {
       transition: 0.8s;
     }
+    &__list {
+      border: 1px solid red;
+      width: 100%;
+      display: -webkit-box;
+      overflow-x: scroll;
+    }
+    &__box-list {
+      width: fit-content;
+      border: 1px solid yellow;
+    }
+    &__item {
+      margin: 0;
+      width: 20%;
+      height: 300px;
+      border: 1px solid lightseagreen;
+    }
+    &__image {
+      border: 1px solid purple;
+      display: none;
+    }
     &__item:hover .fourth-block__button,
     &__item:hover .fourth-block__mask {
       opacity: 1;
@@ -147,6 +171,10 @@
 
     &__shadow {
       display: none;
+    }
+
+    &__list {
+      margin: 0;
     }
   }
 }
