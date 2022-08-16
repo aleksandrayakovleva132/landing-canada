@@ -144,25 +144,22 @@
       transition: 0.8s;
     }
     &__list {
-      border: 1px solid red;
       width: 100%;
       display: -webkit-box;
       overflow-x: scroll;
+      border: 1px solid red;
     }
     &__box-list {
       width: fit-content;
-      border: 1px solid yellow;
     }
     &__item {
       margin: 0;
-      width: 20%;
-      height: 300px;
-      border: 1px solid lightseagreen;
+      width: 19.6%;
+      height: auto;
+      margin-right: 0.5%;
+      border: 1px solid;
     }
-    &__image {
-      border: 1px solid purple;
-      display: none;
-    }
+
     &__item:hover .fourth-block__button,
     &__item:hover .fourth-block__mask {
       opacity: 1;
@@ -175,6 +172,10 @@
 
     &__list {
       margin: 0;
+    }
+
+    &__image {
+      height: auto;
     }
   }
 }
