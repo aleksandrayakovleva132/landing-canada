@@ -71,7 +71,7 @@
     width: 80px;
     height: 361px;
     background: linear-gradient(270deg, #0B0D0E 0%, rgba(11, 13, 14, 0) 102.5%);
-    right: 0;
+    right: -2px;
     top: 0;
     z-index: 2;
   }
@@ -115,17 +115,22 @@
     justify-content: center;
     background: linear-gradient(110.7deg, #49EBF5 -9.14%, #04DB19 136.77%);
     border-radius: 48px;
-    width: 81px;
+    width: 80px;
     height: 42px;
     position: absolute;
-    left: 65px;
-    top: 132px;
+    left: calc(50% - 40px);
+    top: calc(50% - 21px);
     opacity: 0;
+    z-index: 2;
   }
 
   &__item:active .fourth-block__button,
   &__item:active .fourth-block__mask {
     opacity: 1;
+  }
+
+  &__buttons {
+    display: none;
   }
 
   @media (min-width: 1200px) {
@@ -136,7 +141,7 @@
       margin: 0 0 24px 0;
     }
     &__label {
-      margin: 0 0 48px 0;
+      margin: 0;
       font-size: 16px;
       color: #999999;
     }
@@ -147,17 +152,24 @@
       width: 100%;
       display: -webkit-box;
       overflow-x: scroll;
-      border: 1px solid red;
     }
     &__box-list {
       width: fit-content;
     }
     &__item {
       margin: 0;
-      width: 19.6%;
+      width: 99.4%;
       height: auto;
-      margin-right: 0.5%;
-      border: 1px solid;
+      padding-right: 0.5%;
+    }
+
+    &__item-container {
+      //border: 1px solid goldenrod;
+      margin: 0;
+      width: 20%;
+      height: auto;
+      padding-right: 0.6%;
+      box-sizing: border-box;
     }
 
     &__item:hover .fourth-block__button,
@@ -176,6 +188,37 @@
 
     &__image {
       height: auto;
+    }
+
+    &__buttons {
+      display: flex;
+    }
+    &__top-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      align-items: flex-end;
+    }
+
+    &__slider-btn {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      background-color: $layer-1;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      fill: #4C555E;
+
+      &.active {
+        fill: #F9FAFA;
+        background: linear-gradient(110.7deg, #49EBF5 -9.14%, #04DB19 136.77%);
+      }
+
+      &:nth-child(2) {
+        margin-left: 20px;
+      }
     }
   }
 }
