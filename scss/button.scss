@@ -43,6 +43,11 @@
       box-shadow: 1px 1px 20px rgba(28, 212, 120, 0.6);
     }
 
+    &--transparent:hover {
+      background: transparent;
+      box-shadow: none;
+    }
+
     &:active {
       background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
     }

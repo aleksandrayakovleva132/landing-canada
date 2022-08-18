@@ -1,0 +1,43 @@
+.banner {
+  &__title {
+    margin: 0 0 24px 0;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: 0.2px;
+    color: $text-default;
+  }
+
+  &__label {
+    color: $text-primary;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    margin: 0 0 32px 0;
+    font-weight: 300;
+  }
+  @media (max-width: 720px) {
+    &__column.left {
+      padding-top: 32px;
+    }
+  }
+
+  @media (min-width: 720px) {
+    &__row {
+      display: flex;
+    }
+    &__column {
+
+      &.left {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  @media (min-width: 860px) {
+    &__column {
+      margin-top: -92px;
+    }
+  }
+}

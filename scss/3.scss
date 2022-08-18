@@ -1,6 +1,4 @@
 .third-block {
-  padding: 16px 16px 32px 16px;
-
   &__title {
     text-align: center;
     color: $text-default;
@@ -21,19 +19,13 @@
     margin: 0 0 48px 0;
   }
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
   &__item {
     display: flex;
-    margin-bottom: 56px;
-  }
+    margin-bottom: 60px;
 
-  &__image {
-    margin-right: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__subtitle {
@@ -53,15 +45,14 @@
     margin: 0;
   }
 
+  &__image {
+    margin-right: 24px;
+  }
+
   @media (min-width: 1200px) {
-    padding: 76px 0 0 0;
     &__title {
       font-size: 48px;
       line-height: 64px;
-      margin-bottom: 24px;
-    }
-
-    &__title {
       margin-bottom: 24px;
     }
 
@@ -71,21 +62,16 @@
       margin: 0 0 88px 0;
     }
 
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      width: auto;
-      max-width: 1400px;
-      margin: 0 auto;
+    &__label {
+      max-width: 70%;
     }
 
     &__item {
-      width: 50%;
-      margin-bottom: 60px;
-    }
+      margin-bottom: 56px;
 
-    &__label {
-      max-width: 70%;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

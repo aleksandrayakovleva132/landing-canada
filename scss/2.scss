@@ -1,4 +1,5 @@
 .second-block {
+  margin-bottom: 56px;
   &__list {
     margin: 0;
     list-style: none;
@@ -14,6 +15,7 @@
   }
 
   @media (min-width: 720px) {
+    margin-bottom: 76px;
     &__item {
       width: 120px;
     }
@@ -29,8 +31,8 @@
     }
     &__list {
       padding: 0;
-      width: 80%;
       margin: 0 auto;
+      max-width: 90%;
     }
   }
 }

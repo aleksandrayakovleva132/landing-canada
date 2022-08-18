@@ -5,302 +5,167 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>???</title>
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Canada Android</title>
 </head>
-<body>
-<!--  header-->
-    <header class="header">
-        <div class="header__container block-flexible">
-            <div class="header__logo">
+<body class="body">
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-md-6 header__column left">
                 <img class="header__img" src="images/logotypes/leon.svg"/>
             </div>
-            <div class="header__buttons">
-                <a class="button button--small button--transparent">
-                    Log In
-                </a>
-                <a class="button button--small">
-                    Sign Up
-                </a>
+            <div class="col-xs-6 col-md-6 header__column right">
+              <div class="header__buttons">
+                  <a class="button button--small button--transparent">
+                      Log In
+                  </a>
+                  <a class="button button--small">
+                      Sign Up
+                  </a>
+              </div>
             </div>
         </div>
-    </header>
-   <div class="first-block block-flexible">
-       <div class="first-block__row">
-           <div class="first-block__column">
-               <h2 class="first-block__title">Get a 100%  Casino Bonus up to €500</h2>
-               <p class="first-block__label">
-                   Create an account at Leon and claim your welcome bonus instantly. Enjoy thousands of slots and LIVE casino games all in one place.
-               </p>
-               <a class="first-block__button button anim-item anim-resize" href="">
-                   Sign Up
-               </a>
-           </div>
-           <div class="first-block__image animate-hero mobile">
-               <img src="images/1/1.png" alt="img-1">
-           </div>
-           <div class="first-block__image animate-hero desktop">
-               <img src="images/1/1-desktop.png" alt="img-1" width="100%">
-           </div>
-       </div>
-   </div>
-   <div class="second-block block-flexible anima-item anim-no-hide">
-      <ul class="second-block__list">
-          <li class="second-block__item anim-item anima-show anima-show anima-show-1">
-              <img src="images/2/1.svg" alt="1" width="100%">
-          </li>
-          <li class="second-block__item anim-item anima-show anim-no-hide anima-show-2">
-              <img src="images/2/2.svg" alt="1" width="100%">
-          </li>
-          <li class="second-block__item anim-item anima-show anim-no-hide anima-show-3">
-              <img src="images/2/3.svg" alt="1" width="100%">
-          </li>
-          <li class="second-block__item anim-item anima-show anim-no-hide anima-show-4">
-              <img src="images/2/4.svg" alt="1" width="100%">
-          </li>
-      </ul>
-   </div>
+    </div>
+</header>
+<div class="main">
+    <div class="container">
+        <div class="row banner__row">
+            <div class="col-md-5 banner__column left">
+                <div>
+                    <h1 class="banner__title">Get a 100%<br>Casino Bonus <br> up to €500</h1>
+                    <p class="banner__label">
+                        Create an account at Leon and claim your welcome bonus instantly. Enjoy thousands of slots and LIVE casino games
+                        <br> all in one place.
+                    </p>
+                    <a class="button">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7 banner__column right">
+                <div class="banner__image">
+                    <img src="images/1/1-desktop.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container second-block">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="second-block__list">
+                    <li class="second-block__item "> <!-- anim-item anima-show anima-show anima-show-1 -->
+                        <img src="images/2/1.svg" alt="1" width="100%">
+                    </li>
+                    <li class="second-block__item">
+                        <img src="images/2/2.svg" alt="1" width="100%">
+                    </li>
+                    <li class="second-block__item">
+                        <img src="images/2/3.svg" alt="1" width="100%">
+                    </li>
+                    <li class="second-block__item anim-item">
+                        <img src="images/2/4.svg" alt="1" width="100%">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container third-block">
+        <div class="row">
+            <h2 class="third-block__title">What we offer</h2>
+            <p class="third-block__pre-text">If you’re looking for the best casino experience, you’ve come to the right place!</p>
+        </div>
+    </div>
+    <div class="container third-block">
+        <div class="third-block__item col-md-6">
+            <div class="third-block__image anim-resize">
+                <img src="images/3/1.png" alt="1">
+            </div>
+            <div class="third-block__text">
+                <h3 class="third-block__subtitle">Transparent & fast payments</h3>
+                <p class="third-block__label">Use your only trusted payment methods for secure deposits and quick withdrawals.</p>
+            </div>
+        </div>
+        <div class="third-block__item col-md-6">
+            <div class="third-block__image anim-resize">
+                <img src="images/3/2.png" alt="2">
+            </div>
+            <div class="third-block__text">
+                <h3 class="third-block__subtitle">Top-notch slots & live casino</h3>
+                <p class="third-block__label">Enjoy a wide range of slots as well as live games with professional dedicated dealers.</p>
+            </div>
+        </div>
+        <div class="third-block__item col-md-6">
+            <div class="third-block__image anim-resize">
+                <img src="images/3/3.png" alt="3">
+            </div>
+            <div class="third-block__text">
+                <h3 class="third-block__subtitle">Gaming based on trust</h3>
+                <p class="third-block__label">Get in touch with our friendly customer support agents, who are available day and night, 24/7.</p>
+            </div>
+        </div>
+        <div class="third-block__item col-md-6">
+            <div class="third-block__image anim-resize">
+                <img src="images/3/4.png" alt="4">
+            </div>
+            <div class="third-block__text">
+                <h3 class="third-block__subtitle">Regular promos & bonus offers</h3>
+                <p class="third-block__label">Join hot tournaments, collect exclusive bonuses and get rewarded with bonus points as you play.</p>
+            </div>
+        </div>
+    </div>
 
-   <div class="third-block block-flexible">
-       <h2 class="third-block__title">What we offer</h2>
-       <p class="third-block__pre-text">If you’re looking for the best casino experience, you’ve come to the right place!</p>
-       <ul class="third-block__list">
-           <li class="third-block__item">
-               <div class="third-block__image">
-                   <img src="images/3/1.png" alt="1">
-               </div>
-               <div class="third-block__text">
-                   <h3 class="third-block__subtitle">Transparent & fast payments</h3>
-                   <p class="third-block__label">Use your only trusted payment methods for secure deposits and quick withdrawals.</p>
-               </div>
-           </li>
-           <li class="third-block__item">
-               <div class="third-block__image">
-                   <img src="images/3/2.png" alt="2">
-               </div>
-               <div class="third-block__text">
-                   <h3 class="third-block__subtitle">Top-notch slots & live casino</h3>
-                   <p class="third-block__label">Enjoy a wide range of slots as well as live games with professional dedicated dealers.</p>
-               </div>
-           </li>
-           <li class="third-block__item">
-               <div class="third-block__image">
-                   <img src="images/3/3.png" alt="3">
-               </div>
-               <div class="third-block__text">
-                   <h3 class="third-block__subtitle">Gaming based on trust</h3>
-                   <p class="third-block__label">Get in touch with our friendly customer support agents, who are available day and night, 24/7.</p>
-               </div>
-           </li>
-           <li class="third-block__item">
-               <div class="third-block__image">
-                   <img src="images/3/4.png" alt="4">
-               </div>
-               <div class="third-block__text">
-                   <h3 class="third-block__subtitle">Regular promos & bonus offers</h3>
-                   <p class="third-block__label">Join hot tournaments, collect exclusive bonuses and get rewarded with bonus points as you play.</p>
-               </div>
-           </li>
-       </ul>
-   </div>
+    <div class="container fourth-block">
+        <section class="customer-logos slider fourth-block__slider">
+            <div class="slide fourth-block__item">
+                <img src="images/4/1.png">
+                <div class="fourth-block__label">Zeus the Thunderer</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/2.png">
+                <div class="fourth-block__label">Hypernova 10k ways</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/3.png">
+                <div class="fourth-block__label">Golden Forge</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/4.png">
+                <div class="fourth-block__label">Sugar Rush</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/5.png">
+                <div class="fourth-block__label">Gold Rush with John</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/6.png">
+                <div class="fourth-block__label">Sweet Bonanza</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/7.png">
+                <div class="fourth-block__label">Arabian Secret</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/8.png">
+                <div class="fourth-block__label">Valley of the Gods 2</div>
+            </div>
+            <div class="slide fourth-block__item">
+                <img src="images/4/9.png">
+                <div class="fourth-block__label">Playboy</div>
+            </div>
+        </section>
+    </div>
+</div>
 
-   <div class="fourth-block block-flexible">
-       <div class="fourth-block__top-container">
-       <div>
-           <h2 class="fourth-block__title">
-               Over 4 000 casino games
-           </h2>
-           <p class="fourth-block__label">
-               We offer a variety of video slots, table games, live dealer games, daily jackpots, and much more!
-           </p>
-       </div>
-           <div class="fourth-block__buttons">
-               <button class="fourth-block__slider-btn fourth-block__slider-btn--left" onclick="left()">
-                   <svg width="12" height="12" viewBox="0 0 12 12" fill="inherit" xmlns="http://www.w3.org/2000/svg">
-                       <path d="M0.569429 5.65166C0.613058 5.53914 0.678476 5.43634 0.76193 5.34916L5.34526 0.76583C5.43073 0.680362 5.5322 0.612565 5.64387 0.566309C5.75554 0.520054 5.87522 0.496246 5.9961 0.496246C6.2402 0.496246 6.47432 0.593219 6.64693 0.76583C6.7324 0.851299 6.80019 0.952765 6.84645 1.06444C6.8927 1.17611 6.91651 1.29579 6.91651 1.41666C6.91651 1.66077 6.81954 1.89489 6.64693 2.0675L3.62193 5.08333H10.5794C10.8225 5.08333 11.0557 5.17991 11.2276 5.35182C11.3995 5.52373 11.4961 5.75688 11.4961 6C11.4961 6.24311 11.3995 6.47627 11.2276 6.64818C11.0557 6.82009 10.8225 6.91667 10.5794 6.91667H3.62193L6.64693 9.9325C6.73285 10.0177 6.80104 10.1191 6.84758 10.2308C6.89412 10.3425 6.91808 10.4623 6.91808 10.5833C6.91808 10.7043 6.89412 10.8242 6.84758 10.9359C6.80104 11.0476 6.73285 11.1489 6.64693 11.2342C6.56171 11.3201 6.46033 11.3883 6.34862 11.4348C6.23692 11.4814 6.11711 11.5053 5.9961 11.5053C5.87508 11.5053 5.75527 11.4814 5.64357 11.4348C5.53186 11.3883 5.43048 11.3201 5.34526 11.2342L0.76193 6.65083C0.678476 6.56365 0.613058 6.46085 0.569429 6.34833C0.477746 6.12516 0.477746 5.87484 0.569429 5.65166Z" fill="inherit"/>
-                   </svg>
-               </button>
-               <button class="fourth-block__slider-btn fourth-block__slider-btn--right active" onclick="right()">
-                   <svg width="12" height="12" viewBox="0 0 12 12" fill="inherit" xmlns="http://www.w3.org/2000/svg">
-                       <path d="M11.4267 5.65166C11.383 5.53914 11.3176 5.43634 11.2342 5.34916L6.65083 0.76583C6.56536 0.680362 6.4639 0.612565 6.35223 0.566309C6.24056 0.520054 6.12087 0.496246 6 0.496246C5.75589 0.496246 5.52178 0.593219 5.34917 0.76583C5.2637 0.851299 5.1959 0.952765 5.14964 1.06444C5.10339 1.17611 5.07958 1.29579 5.07958 1.41666C5.07958 1.66077 5.17655 1.89489 5.34917 2.0675L8.37417 5.08333H1.41667C1.17355 5.08333 0.940394 5.17991 0.768486 5.35182C0.596577 5.52373 0.5 5.75688 0.5 6C0.5 6.24311 0.596577 6.47627 0.768486 6.64818C0.940394 6.82009 1.17355 6.91667 1.41667 6.91667H8.37417L5.34917 9.9325C5.26325 10.0177 5.19505 10.1191 5.14852 10.2308C5.10198 10.3425 5.07802 10.4623 5.07802 10.5833C5.07802 10.7043 5.10198 10.8242 5.14852 10.9359C5.19505 11.0476 5.26325 11.1489 5.34917 11.2342C5.43438 11.3201 5.53577 11.3883 5.64747 11.4348C5.75917 11.4814 5.87899 11.5053 6 11.5053C6.12101 11.5053 6.24082 11.4814 6.35253 11.4348C6.46423 11.3883 6.56562 11.3201 6.65083 11.2342L11.2342 6.65083C11.3176 6.56365 11.383 6.46085 11.4267 6.34833C11.5183 6.12516 11.5183 5.87484 11.4267 5.65166Z" fill="inherit"/>
-                   </svg>
-               </button>
-           </div>
-       </div>
-       <div class="fourth-block__container">
-           <div class="fourth-block__shadow"></div>
-       </div>
-       <div class="fourth-block__slider">
-           <div class="fourth-block__list-container">
-               <ul class="fourth-block__list">
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                           <div class="fourth-block__image">
-                               <img src="images/4/1.png" alt="1">
-                           </div>
-                           <div class="fourth-block__item-footer">
-                               <span class="fourth-block__button">Play</span>
-                               <div class="fourth-block__mask"></div>
-                               <p class="fourth-block__item-label">Zeus the Thunderer</p>
-                           </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                           <div class="fourth-block__image">
-                               <img src="images/4/2.png" alt="2">
-                           </div>
-                           <div class="fourth-block__item-footer">
-                               <span class="fourth-block__button">Play</span>
-                               <div class="fourth-block__mask"></div>
-                               <p class="fourth-block__item-label">Hypernova 10k ways</p>
-                           </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                           <div class="fourth-block__image">
-                               <img src="images/4/3.png" alt="3">
-                           </div>
-                           <div class="fourth-block__item-footer">
-                               <span class="fourth-block__button">Play</span>
-                               <div class="fourth-block__mask"></div>
-                               <p class="fourth-block__item-label">
-                                   Golden Forge
-                               </p>
-                           </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                       <div class="fourth-block__image">
-                           <img src="images/4/4.png" alt="4">
-                       </div>
-                       <div class="fourth-block__item-footer">
-                           <span class="fourth-block__button">Play</span>
-                           <div class="fourth-block__mask"></div>
-                           <p class="fourth-block__item-label">Sugar Rush</p>
-                       </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                           <div class="fourth-block__image">
-                               <img src="images/4/5.png" alt="5">
-                           </div>
-                           <div class="fourth-block__item-footer">
-                               <span class="fourth-block__button">Play</span>
-                               <div class="fourth-block__mask"></div>
-                               <p class="fourth-block__item-label">Gold Rush with John
-                               </p>
-                           </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                       <div class="fourth-block__image">
-                           <img src="images/4/6.png" alt="6">
-                       </div>
-                       <div class="fourth-block__item-footer">
-                           <span class="fourth-block__button">Play</span>
-                           <div class="fourth-block__mask"></div>
-                           <p class="fourth-block__item-label">
-                               Sweet Bonanza
-                           </p>
-                       </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                           <div class="fourth-block__image">
-                               <img src="images/4/7.png" alt="7">
-                           </div>
-                           <div class="fourth-block__item-footer">
-                               <span class="fourth-block__button">Play</span>
-                               <div class="fourth-block__mask"></div>
-                               <p class="fourth-block__item-label">
-                                   Arabian Secret
-                               </p>
-                           </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                           <div class="fourth-block__image">
-                               <img src="images/4/8.png" alt="8">
-                           </div>
-                           <div class="fourth-block__item-footer">
-                               <span class="fourth-block__button">Play</span>
-                               <div class="fourth-block__mask"></div>
-                               <p class="fourth-block__item-label">
-                                   Valley of the Gods 2
-                               </p>
-                           </div>
-                       </div>
-                   </li>
-                   <li class="fourth-block__item-container">
-                       <div class="fourth-block__item">
-                           <div class="fourth-block__image">
-                               <img src="images/4/9.png" alt="9">
-                           </div>
-                           <div class="fourth-block__item-footer">
-                               <span class="fourth-block__button">Play</span>
-                               <div class="fourth-block__mask"></div>
-                               <p class="fourth-block__item-label">
-                                   Playboy
-                               </p>
-                           </div>
-                       </div>
-                   </li>
-               </ul>
-           </div>
-       </div>
-   </div>
 
-   <div  class="fifth-block block-flexible">
-     <div class="fifth-block__bg">
-         <div>
-             <h2 class="fifth-block__title">Loyalty program</h2>
-             <p class="fifth-block__label">Earn points by playing your favourite games and redeem them for cash.</p>
-             <a class="button anim-resize">
-                 Sign Up
-             </a>
-         </div>
-     </div>
-     <div class="fifth-block__image mobile">
-         <img src="images/5/coins.png" alt="5" width="204.7">
-     </div>
-       <div class="fifth-block__image desktop">
-           <img src="images/5/coins-desktop.png" alt="5" width="717">
-       </div>
- </div>
-
- <footer class="footer anim-item">
-     <div class="footer__apps-block">
-     </div>
-
-     <div class="footer__logo">
-         <img src="images/logotypes/leon.svg" />
-     </div>
-     <ul class="footer__list">
-         <li class="footer__item anim-resize">
-             <a href="https://vk.com/leonru_official">
-                 <img src="images/icons/vk.svg" alt="vk">
-             </a>
-
-         </li>
-         <li class="footer__item anim-resize">
-             <a href="https://t.me/leonru_official">
-                 <img src="images/icons/telegram.svg" alt="telegram">
-             </a>
-         </li>
-     </ul>
-     <div class="footer__icon">
-         <img src="images/icons/icon_18.svg" alt="18+" width="25">
-     </div>
-     <p class="footer__label">© 2007-<span id="currentYear" onload="showYear()"></span> <br>
-         Leon Curacao N.V - Reg nbr 140186 - Address Schout Bij Nacht Doormanweg 40, Willemstad, Curacao</p>
- </footer>
- <script src="script.js"> </script>
+<script src="slider.js"></script>
 </body>
 </html>
