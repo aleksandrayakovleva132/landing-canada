@@ -50,6 +50,8 @@
   }
 
   @media (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
     &__title {
       font-size: 48px;
       line-height: 64px;

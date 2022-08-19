@@ -1,17 +1,118 @@
 .fourth-block {
-  &__item {
-    background: linear-gradient(287.52deg, #0B0D0E 4.81%, #22262A 86.39%);
-    border-radius: 8px;
-    overflow: hidden;
+  padding: 50px 0 35px 0;
+  &__title {
+    color: $text-default;
+    margin: 0 0 16px 0;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+    width: 80%;
+    padding: 0 16px;
   }
 
   &__label {
+    color: $text-secondary;
+    margin: 0 0 32px 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    padding: 0 16px;
+  }
+  &__item {
+    //background: linear-gradient(287.52deg, #0B0D0E 4.81%, #22262A 86.39%);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__label-item {
     font-weight: 500;
     color: $text-default;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.3px;
     margin: 0;
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
     padding: 16px;
   }
+
+  &__item-mask {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+    top: -1px;
+    bottom: 53px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+  }
+
+  &__item-bg {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+    bottom: 0;
+    left: -1px;
+    right: -1px;
+    background-image: url("../images/4/bottom.png");
+    z-index: 3;
+  }
+
+  &__button {
+    color: $white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(110.7deg, #49EBF5 -9.14%, #04DB19 136.77%);
+    border-radius: 48px;
+    width: 80px;
+    height: 42px;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 21px);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &__container.container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__text {
+    padding: 0 15px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 60px 0;
+    &__title {
+      font-size: 48px;
+      line-height: 64px;
+      margin: 0 0 24px 0;
+    }
+    &__label {
+      margin: 0;
+      font-size: 16px;
+      color: #999999;
+    }
+
+    &__slider {
+      margin-top: -60px;
+    }
+
+    &__item:hover .fourth-block__item-mask,
+    &__item:hover .fourth-block__button {
+      opacity: 1;
+    }
+  }
 }
+

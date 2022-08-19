@@ -112,3 +112,68 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+.slick-prev {
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+
+.slick-next {
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.slick-slider {
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: 1px solid purple;
+}
+
+@media (max-width: 760px) {
+    .slick-slider {
+        max-width: 100vw;
+        //border: 1px solid red;
+        &:first-child {
+            margin-left: 15px;
+        }
+    }
+    .slick-slide {
+        width: 210px;
+    }
+    .slick-next,
+    .slick-prev {
+        display: none;
+        z-index: -2;
+        opacity: 0;
+    }
+}
+@media (min-width: 860px) {
+    .slick-slider {
+        padding-top: 108px;
+    }
+
+    .slick-next,
+    .slick-prev {
+        fill: $highlight;
+    }
+
+    .slick-next:active,
+    .slick-next:hover,
+    .slick-prev:active,
+    .slick-prev:hover,{
+        background: linear-gradient(110.7deg, #49EBF5 -9.14%, #04DB19 136.77%);
+        fill: $white;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slick-slide {
+        width: 220px;
+        margin: 0 10px;
+    }
+}
+//
+//.row {
+//    border: 1px solid red;
+//}
