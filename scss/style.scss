@@ -24,4 +24,12 @@
     width: 0;
     height: 0;
   }
+
+  a:focus, a:hover , a:active {
+    /* color: #23527c; */
+    text-decoration: none;
+    color: $text-default;
+    outline: none;
+  }
 }
+

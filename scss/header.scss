@@ -19,6 +19,11 @@
     }
   }
 
+  &__buttons {
+    position: absolute;
+    z-index: 5;
+  }
+
   @media (min-width: 720px) {
     height: 92px;
 
