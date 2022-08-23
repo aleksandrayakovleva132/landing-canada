@@ -70,8 +70,26 @@ function showYear() {
 
     document.getElementById("currentYear").innerText = year;
 }
+
+const bannerImage = document.querySelector('.banner__image');
+const contentBannerColumn = document.querySelector('.banner__column--left');
+
+function getBannerHeight() {
+    let bannerHeight = bannerImage.clientHeight + 'px';
+    console.log(bannerHeight);
+    console.log(contentBannerColumn);
+    // contentBannerColumn.style.backgroundColor =  'salmon';
+    // contentBannerColumn.style.minHeight =  bannerHeight;
+    console.log(window.outerWidth);
+
+    if(window.outerWidth > 767) {
+        contentBannerColumn.style.minHeight =  bannerHeight;
+    }
+}
+
 showYear();
 
 setTimeout(animateLateDecorationBanner, 10);
 setTimeout(animateDecorationBanner, 80);
 setTimeout(animateHeroBanner, 250);
+getBannerHeight();

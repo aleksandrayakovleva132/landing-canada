@@ -27,11 +27,14 @@
       display: flex;
     }
     &__column {
-
       &.left {
         display: flex;
         align-items: center;
       }
+    }
+    &__image {
+      position: absolute;
+      width: 50vw;
     }
   }
 
@@ -61,7 +64,6 @@
       font-size: 60px;
       line-height: 82px;
       margin-bottom: 36px;
-      margin-top: 150px;
     }
 
     &__label {
@@ -71,6 +73,10 @@
     }
     &__row {
       padding-bottom: 100px;
+    }
+
+    &__image {
+      width: 45vw;
     }
   }
 
