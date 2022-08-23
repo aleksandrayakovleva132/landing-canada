@@ -1,11 +1,11 @@
 .banner {
   &__title {
     margin: 0 0 24px 0;
-    font-weight: 500;
     font-size: 34px;
     line-height: 43px;
     letter-spacing: 0.2px;
     color: $text-default;
+    font-weight: 700;
   }
 
   &__label {
@@ -23,6 +23,17 @@
   }
 
   @media (min-width: 720px) {
+    &__title {
+      font-size: 60px;
+      line-height: 82px;
+      margin-bottom: 36px;
+    }
+
+    &__label {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 48px;
+    }
     &__row {
       display: flex;
     }
