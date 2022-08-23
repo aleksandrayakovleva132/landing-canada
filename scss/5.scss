@@ -42,6 +42,12 @@
     max-width: 70%;
   }
 
+  @media (min-width: 768px) {
+    &__text-block {
+      padding-left: 17px;
+    }
+  }
+
 
   @media (min-width: 1200px) {
     padding: 60px 0;

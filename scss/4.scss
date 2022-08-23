@@ -80,15 +80,29 @@
     z-index: 2;
   }
 
+  &__item {
+    //border: 1px solid;
+  }
+
   &__item:active .fourth-block__item-mask,
   &__item:active .fourth-block__button {
     opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    &__slider.col-md-12 {
+      padding: 0 0 0 10px;
+    }
   }
 
   @media (min-width: 769px) {
     &__item:hover .fourth-block__item-mask,
     &__item:hover .fourth-block__button {
       opacity: 1;
+    }
+
+    &__slider {
+      margin: 0;
     }
   }
 

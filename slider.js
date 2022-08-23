@@ -2,8 +2,8 @@ $(document).ready(function(){
         $('.customer-logos').slick({
             slidesToShow: 5,
             slidesToScroll: 5,
-            autoplay: false,
-            autoplaySpeed: 1500,
+            autoplay: true,
+            autoplaySpeed: 1000,
             arrows: true,
             dots: false,
             pauseOnHover: true,
@@ -22,6 +22,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
+                    autoplay: false,
                 }
             },
             {
@@ -29,6 +30,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    autoplay: false,
                 }
             },
             {
@@ -37,6 +39,7 @@ $(document).ready(function(){
                     slidesToShow: 1.5,
                     slidesToScroll: 2,
                     infinite: false,
+                    autoplay: false,
                 }
             }
             ],

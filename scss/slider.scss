@@ -115,13 +115,13 @@
 .slick-prev {
     position: absolute;
     top: 0;
-    right: 80px;
+    right: 106px;
 }
 
 .slick-next {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 24px;
 }
 
 .slick-slider {
@@ -135,7 +135,7 @@
         right: -1px;
         background: linear-gradient(270deg, #0B0D0E 0%, rgba(11, 13, 14, 0) 102.5%);
         width: 80px;
-        height: 361px;
+        height: 500px;
         position: absolute;
     }
 }
