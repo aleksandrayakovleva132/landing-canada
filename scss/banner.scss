@@ -23,17 +23,6 @@
   }
 
   @media (min-width: 720px) {
-    &__title {
-      font-size: 60px;
-      line-height: 82px;
-      margin-bottom: 36px;
-    }
-
-    &__label {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 48px;
-    }
     &__row {
       display: flex;
     }
@@ -46,9 +35,43 @@
     }
   }
 
+  @media (min-width: 769px) {
+    &__title {
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom: 36px;
+    }
+
+    &__label {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 36px;
+    }
+  }
+
+
   @media (min-width: 860px) {
     &__column {
       margin-top: -92px;
     }
   }
+
+  @media (min-width: 1200px) {
+    &__title {
+      font-size: 60px;
+      line-height: 82px;
+      margin-bottom: 36px;
+      margin-top: 150px;
+    }
+
+    &__label {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 48px;
+    }
+    &__row {
+      padding-bottom: 100px;
+    }
+  }
+
 }
