@@ -1,9 +1,9 @@
 $(document).ready(function(){
         $('.customer-logos').slick({
             slidesToShow: 5,
-            slidesToScroll: 5,
+            slidesToScroll: 2,
             autoplay: true,
-            autoplaySpeed: 1000,
+            autoplaySpeed: 4000,
             arrows: true,
             dots: false,
             pauseOnHover: true,
