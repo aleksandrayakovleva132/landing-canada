@@ -2,12 +2,12 @@ $(document).ready(function(){
         $('.customer-logos').slick({
             slidesToShow: 5,
             slidesToScroll: 2,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 4000,
             arrows: true,
             dots: false,
             pauseOnHover: true,
-            cssEase:'linear',
+            // cssEase:'linear',
             responsive: [
                 {
                     breakpoint: 1010,

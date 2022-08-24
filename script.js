@@ -87,9 +87,14 @@ function getBannerHeight() {
     }
 }
 
+// document.addEventListener('scroll', function () {
+//     if
+// }
+
 showYear();
 
 setTimeout(animateLateDecorationBanner, 10);
 setTimeout(animateDecorationBanner, 80);
 setTimeout(animateHeroBanner, 250);
 getBannerHeight();
+
