@@ -13,7 +13,7 @@
   @media (max-width: 720px) {
     &__item {
       width: calc(50% - 10px);
-      
+
       &:nth-child(1),
       &:nth-child(2) {
         margin-bottom: 20px;
