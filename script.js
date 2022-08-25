@@ -76,25 +76,40 @@ const contentBannerColumn = document.querySelector('.banner__column--left');
 
 function getBannerHeight() {
     let bannerHeight = bannerImage.clientHeight + 'px';
-    console.log(bannerHeight);
-    console.log(contentBannerColumn);
-    // contentBannerColumn.style.backgroundColor =  'salmon';
-    // contentBannerColumn.style.minHeight =  bannerHeight;
-    console.log(window.outerWidth);
-
     if(window.outerWidth > 767) {
         contentBannerColumn.style.minHeight =  bannerHeight;
     }
 }
 
-// document.addEventListener('scroll', function () {
-//     if
-// }
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function(e) {
+    if (bannerImage.clientHeight > window.scrollY) {
+        header.classList.add('header--sticky');
+    }
+    if (window.scrollY === 0) {
+        header.classList.remove('header--sticky');
+    }
+})
+
+const miniBannerMobile = document.querySelector('.fifth-block__image--mobile');
+const miniBannerDesktop = document.querySelector('.fifth-block__image--desktop');
+const miniBannerBlock = document.querySelector('.fifth-block__bg');
+
+function getMiniBannerSize() {
+        // let countWidth = miniBannerWidth.toFixed(1) + 'px';
+    let widthMobile = (miniBannerBlock.clientWidth / 2).toFixed(1) + 'px';
+    let widthDesktop = (miniBannerBlock.clientWidth / 3 * 2).toFixed(1) + 'px';
+    miniBannerMobile.style.width = widthMobile;
+    miniBannerDesktop.style.width = widthDesktop;
+
+    console.log(widthDesktop, widthMobile);
+}
+
 
 showYear();
-
 setTimeout(animateLateDecorationBanner, 10);
 setTimeout(animateDecorationBanner, 80);
 setTimeout(animateHeroBanner, 250);
 getBannerHeight();
-
+getMiniBannerSize();

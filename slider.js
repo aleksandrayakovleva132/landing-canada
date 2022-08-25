@@ -10,7 +10,7 @@ $(document).ready(function(){
             // cssEase:'linear',
             responsive: [
                 {
-                    breakpoint: 1010,
+                    breakpoint: 1011,
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 4,
@@ -23,6 +23,7 @@ $(document).ready(function(){
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     autoplay: false,
+                    arrows: false,
                 }
             },
             {
@@ -31,15 +32,17 @@ $(document).ready(function(){
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     autoplay: false,
+                    arrows: false,
                 }
             },
             {
-                breakpoint: 391,
+                breakpoint: 429,
                 settings: {
                     slidesToShow: 1.5,
                     slidesToScroll: 2,
                     infinite: false,
                     autoplay: false,
+                    arrows: false,
                 }
             }
             ],

@@ -1,7 +1,24 @@
 .no-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    @media (min-width: 771px) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
-//.row {
-//    border: 1px solid peru;
-//}
+.fifth-block__row.row {
+    @media (max-width: 771px) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.fourth-block__slider.col-md-12 {
+    @media (max-width: 768px) {
+        padding: 0 10px;
+    }
+}
+
+.fourth-block__slider.col-md-12 {
+    @media (max-width: 428px) {
+        padding: 0 0 0 10px;
+    }
+}

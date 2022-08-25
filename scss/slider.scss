@@ -115,13 +115,13 @@
 .slick-prev {
     position: absolute;
     top: 0;
-    right: 80px;
+    right: 85px;
 }
 
 .slick-next {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
 }
 
 .slick-slider {
@@ -139,24 +139,15 @@
         position: absolute;
     }
 }
-
-@media (max-width: 760px) {
-    .slick-slide {
-        width: 210px;
-    }
-    .slick-next,
-    .slick-prev {
-        display: none;
-        z-index: -2;
-        opacity: 0;
-    }
-}
-@media (min-width: 860px) {
+@media (min-width: 429px) {
     .slick-slider {
         &::after {
             display: none;
         }
     }
+}
+@media (min-width: 520px) {
+
 
     .slick-next,
     .slick-prev {
@@ -169,6 +160,17 @@
     .slick-prev:hover,{
         background: linear-gradient(110.7deg, #49EBF5 -9.14%, #04DB19 136.77%);
         fill: $white;
+    }
+}
+@media (max-width: 760px) {
+    .slick-slide {
+        width: 210px;
+    }
+    .slick-next,
+    .slick-prev {
+        display: none;
+        z-index: -2;
+        opacity: 0;
     }
 }
 @media (min-width: 1011px) {

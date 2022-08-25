@@ -8,6 +8,7 @@
     line-height: 45px;
     letter-spacing: 0.2px;
     width: 80%;
+    padding-left: 5px;
   }
 
   &__label {
@@ -17,6 +18,7 @@
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.3px;
+    padding-left: 5px;
   }
   &__item {
     border-radius: 8px;
@@ -89,12 +91,6 @@
     opacity: 1;
   }
 
-  @media (max-width: 768px) {
-    &__slider.col-md-12 {
-      padding: 0 0 0 10px;
-    }
-  }
-
   @media (min-width: 769px) {
     &__item:hover .fourth-block__item-mask,
     &__item:hover .fourth-block__button {
@@ -104,12 +100,22 @@
     &__slider {
       margin: 0;
     }
+
+    &__title,
+    &__label {
+      padding-left: 10px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1010px) {
+    &__label-item {
+      font-size: 13px;
+    }
   }
 
   @media (min-width: 1011px) {
     &__slider {
       margin-top: -60px;
-      border: 1px solid lightgreen;
     }
   }
   @media (min-width: 1200px) {
@@ -118,12 +124,14 @@
       font-size: 48px;
       line-height: 64px;
       margin: 0 0 24px 0;
+      padding-left: 10px;
     }
     &__label {
       margin: 0;
       font-size: 16px;
       line-height: 24px;
       color: #999999;
+      padding-left: 10px;
     }
   }
 }
