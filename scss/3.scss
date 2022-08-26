@@ -16,7 +16,7 @@
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.3px;
-    margin: 0 0 48px 0;
+    margin: 0;
   }
 
   &__item {
@@ -52,6 +52,9 @@
   @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
+    &--second {
+      padding-bottom: 60px;
+    }
     &__title {
       font-size: 48px;
       line-height: 64px;

@@ -99,7 +99,7 @@ const miniBannerBlock = document.querySelector('.fifth-block__bg');
 function getMiniBannerSize() {
         // let countWidth = miniBannerWidth.toFixed(1) + 'px';
     let widthMobile = (miniBannerBlock.clientWidth / 2).toFixed(1) + 'px';
-    let widthDesktop = (miniBannerBlock.clientWidth / 3 * 2).toFixed(1) + 'px';
+    let widthDesktop = (miniBannerBlock.clientWidth / 5 * 3).toFixed(1) + 'px';
     miniBannerMobile.style.width = widthMobile;
     miniBannerDesktop.style.width = widthDesktop;
 
