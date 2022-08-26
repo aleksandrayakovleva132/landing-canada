@@ -1,11 +1,12 @@
 $(document).ready(function(){
         $('.customer-logos').slick({
             slidesToShow: 5,
-            slidesToScroll: 2,
+            slidesToScroll: 3,
             autoplay: true,
             autoplaySpeed: 4000,
             arrows: true,
             dots: false,
+            infinite: true,
             pauseOnHover: true,
             // cssEase:'linear',
             responsive: [
@@ -13,7 +14,7 @@ $(document).ready(function(){
                     breakpoint: 1011,
                     settings: {
                         slidesToShow: 4,
-                        slidesToScroll: 4,
+                        slidesToScroll: 3,
                         arrows: false,
                     }
                 },
@@ -30,7 +31,7 @@ $(document).ready(function(){
                 breakpoint: 520,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 3,
                     autoplay: false,
                     arrows: false,
                 }
@@ -39,7 +40,7 @@ $(document).ready(function(){
                 breakpoint: 429,
                 settings: {
                     slidesToShow: 1.5,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     infinite: false,
                     autoplay: false,
                     arrows: false,
