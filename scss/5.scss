@@ -4,7 +4,6 @@
 
   &__bg {
     width: calc(100% - 10px);
-    height: 232px;
     background: linear-gradient(287.52deg, #0B0D0E 4.81%, #22262A 86.39%);
     border-radius: 16px;
     padding: 27.5px 16px;
@@ -44,6 +43,12 @@
     }
   }
 
+  @media (max-width: 460px) {
+     &__label {
+        width: 200px;
+     }
+  }
+
   @media (min-width: 768px) {
     &__image--desktop {
       display: block;
@@ -53,9 +58,7 @@
     &__image--mobile {
       display: none;
     }
-  }
 
-  @media (min-width: 768px) {
     &__text-block {
       padding-left: 17px;
     }
@@ -69,15 +72,6 @@
       margin: 0 10px;
       width: calc(100% - 20px);
     }
-    //&__image.mobile {
-    //  display: none;
-    //}
-    //&__image.desktop {
-    //  display: block;
-    //  bottom: 0;
-    //  right: -32px;
-    //}
-
     &__bg {
       height: 280px;
       display: flex;
