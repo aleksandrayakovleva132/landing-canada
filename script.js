@@ -77,7 +77,7 @@ const contentBannerColumn = document.querySelector('.banner__column--left');
 function getBannerHeight() {
     let bannerHeight = bannerImage.clientHeight + 'px';
     if(window.outerWidth > 767) {
-        contentBannerColumn.style.minHeight =  bannerHeight;
+        contentBannerColumn.style.height =  bannerHeight;
     }
 }
 

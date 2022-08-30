@@ -52,7 +52,7 @@
   @media (min-width: 768px) {
     &__image--desktop {
       display: block;
-      right: -10px;
+      right: 10px;
       bottom: 100px;
     }
     &__image--mobile {
@@ -77,6 +77,10 @@
       display: flex;
       align-items: center;
       padding: 0 0 0 32px;
+    }
+
+    &__image--desktop {
+      right: -10px;
     }
   }
 }
