@@ -20,15 +20,19 @@
     height: 42px;
   }
 
+
+  &:active {
+    background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
+  }
+
   &--transparent {
     width: 94px;
     height: 42px;
     margin-right: 16px;
     background: transparent;
-  }
-
-  &:active {
-    background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
+    &:active {
+      background: transparent;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -45,16 +49,16 @@
       text-decoration: none;
     }
 
-    &--transparent:hover {
-      background: transparent;
-      box-shadow: none;
-      color: $text-primary;
-    }
-
     &:active {
       background: linear-gradient(110.7deg, #0AC0FF -9.14%, rgba(4, 219, 25, 0.7) 136.77%);
     }
 
+    &--transparent:hover,
+    &--transparent:active {
+      background: transparent;
+      box-shadow: none;
+      color: $text-primary;
+    }
 
     &--small {
       width: 107px;
