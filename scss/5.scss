@@ -1,5 +1,5 @@
 .fifth-block {
-  padding: 60px 16px;
+  padding: 34px 16px 0 16px;
   position: relative;
 
   &__bg {
@@ -7,7 +7,6 @@
     background: linear-gradient(287.52deg, #0B0D0E 4.81%, #22262A 86.39%);
     border-radius: 16px;
     padding: 27.5px 16px;
-    margin: 0 5px;
   }
 
   &__title {
@@ -38,7 +37,7 @@
       display: none;
     }
     &--mobile {
-      bottom: 50px;
+      bottom: 80px;
       right: 15px;
     }
   }
@@ -61,9 +60,6 @@
 
     &__text-block {
       padding-left: 17px;
-    }
-    &__bg {
-      margin: 0 10px;
     }
   }
 

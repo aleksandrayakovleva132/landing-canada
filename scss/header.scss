@@ -8,6 +8,9 @@
 
   &__buttons {
     display: flex;
+    position: absolute;
+    z-index: 5;
+    align-items: center;
   }
 
   &__column {
@@ -20,9 +23,21 @@
     }
   }
 
-  &__buttons {
-    position: absolute;
-    z-index: 5;
+  &__cross {
+    height: 58px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+  }
+
+  &__cross-btn {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    fill: #49525A;
   }
 
   @media (min-width: 720px) {
@@ -34,6 +49,20 @@
 
     &__column {
       height: 92px;
+    }
+
+    &__buttons {
+      right: 0;
+    }
+
+    &__cross {
+      margin-left: 16px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+   &__cross-btn:hover {
+      fill: #D5D9DD;
     }
   }
 

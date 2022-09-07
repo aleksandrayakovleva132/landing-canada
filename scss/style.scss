@@ -29,8 +29,29 @@
   a:focus, a:hover , a:active {
     /* color: #23527c; */
     text-decoration: none;
-    color: $text-default;
     outline: none;
   }
+}
+a.link {
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(110.7deg,#49EBF5 -9.14%,rgba(4,219,25,0.7) 136.77%);
+  margin: 32px 0 35px 0;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 60px;
+
+    &:hover {
+      font-weight: 700;
+      color: transparent;
+      background-clip: text;
+      background-image: linear-gradient(110.7deg,#49EBF5 -9.14%,rgba(4,219,25,0.7) 136.77%);
+    }
+  }
+
 }
 
