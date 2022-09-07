@@ -53,9 +53,6 @@
   @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    &--second {
-      padding-bottom: 60px;
-    }
     &__title {
       font-size: 48px;
       line-height: 64px;
@@ -68,16 +65,13 @@
       margin: 0 0 88px 0;
     }
 
-    &__label {
-      max-width: 70%;
-    }
-
     &__item {
-      margin-bottom: 56px;
-
-      &:last-child {
-        margin-bottom: 0;
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 56px;
       }
+
+      margin-bottom: 0;
     }
   }
 }
