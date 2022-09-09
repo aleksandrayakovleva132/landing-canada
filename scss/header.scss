@@ -67,6 +67,10 @@
     }
   }
 
+  a.header__nav-link:active {
+    color: #D5D9DD;
+  }
+
   @media (min-width: 720px) {
     height: 92px;
 
